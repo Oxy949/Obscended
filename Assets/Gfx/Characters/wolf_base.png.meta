@@ -1,0 +1,1308 @@
+fileFormatVersion: 2
+guid: ab8fea508fb46f542b9c1c8c009f5f1e
+timeCreated: 1454086294
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wolf_base_0
+    21300002: wolf_base_1
+    21300004: wolf_base_2
+    21300006: wolf_base_3
+    21300008: wolf_base_4
+    21300010: wolf_base_5
+    21300012: wolf_base_6
+    21300014: wolf_base_7
+    21300016: wolf_base_8
+    21300018: wolf_base_9
+    21300020: wolf_base_10
+    21300022: wolf_base_11
+    21300024: wolf_base_12
+    21300026: wolf_base_13
+    21300028: wolf_base_14
+    21300030: wolf_base_15
+    21300032: wolf_base_16
+    21300034: wolf_base_17
+    21300036: wolf_base_18
+    21300038: wolf_base_19
+    21300040: wolf_base_20
+    21300042: wolf_base_21
+    21300044: wolf_base_22
+    21300046: wolf_base_23
+    21300048: wolf_base_24
+    21300050: wolf_base_25
+    21300052: wolf_base_26
+    21300054: wolf_base_27
+    21300056: wolf_base_28
+    21300058: wolf_base_29
+    21300060: wolf_base_30
+    21300062: wolf_base_31
+    21300064: wolf_base_32
+    21300066: wolf_base_33
+    21300068: wolf_base_34
+    21300070: wolf_base_35
+    21300072: wolf_base_36
+    21300074: wolf_base_37
+    21300076: wolf_base_38
+    21300078: wolf_base_39
+    21300080: wolf_base_40
+    21300082: wolf_base_41
+    21300084: wolf_base_42
+    21300086: wolf_base_43
+    21300088: wolf_base_44
+    21300090: wolf_base_45
+    21300092: wolf_base_46
+    21300094: wolf_base_47
+    21300096: wolf_base_48
+    21300098: wolf_base_49
+    21300100: wolf_base_50
+    21300102: wolf_base_51
+    21300104: wolf_base_52
+    21300106: wolf_base_53
+    21300108: wolf_base_54
+    21300110: wolf_base_55
+    21300112: wolf_base_56
+    21300114: wolf_base_57
+    21300116: wolf_base_58
+    21300118: wolf_base_59
+    21300120: wolf_base_60
+    21300122: wolf_base_61
+    21300124: wolf_base_62
+    21300126: wolf_base_63
+    21300128: wolf_base_64
+    21300130: wolf_base_65
+    21300132: wolf_base_66
+    21300134: wolf_base_67
+    21300136: wolf_base_68
+    21300138: wolf_base_69
+    21300140: wolf_base_70
+    21300142: wolf_base_71
+    21300144: wolf_base_72
+    21300146: wolf_base_73
+    21300148: wolf_base_74
+    21300150: wolf_base_75
+    21300152: wolf_base_76
+    21300154: wolf_base_77
+    21300156: wolf_base_78
+    21300158: wolf_base_79
+    21300160: wolf_base_80
+    21300162: wolf_base_81
+    21300164: wolf_base_82
+    21300166: wolf_base_83
+    21300168: wolf_base_84
+    21300170: wolf_base_85
+    21300172: wolf_base_86
+    21300174: wolf_base_87
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: wolf_base_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 32}
+        - {x: -13, y: 19}
+        - {x: -13, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 15}
+        - {x: 3, y: 32}
+    - name: wolf_base_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 30}
+        - {x: -13, y: 24}
+        - {x: -13, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 24}
+        - {x: 13, y: 30}
+    - name: wolf_base_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 28}
+        - {x: -6, y: 28}
+        - {x: -13, y: 14}
+        - {x: -13, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 22}
+        - {x: 9, y: 27}
+    - name: wolf_base_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 19}
+        - {x: 1, y: 29}
+        - {x: -9, y: 29}
+        - {x: -13, y: 21}
+        - {x: -13, y: -32}
+        - {x: 14, y: -32}
+    - name: wolf_base_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 31}
+        - {x: -6, y: 31}
+        - {x: -13, y: 17}
+        - {x: -13, y: -32}
+        - {x: 14, y: -32}
+        - {x: 14, y: 14}
+        - {x: 12, y: 30}
+    - name: wolf_base_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 324
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 63
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_8
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 352
+        width: 61
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_9
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 352
+        width: 60
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 257
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_11
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 257
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 258
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_13
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 256
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_14
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 260
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_15
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 260
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_16
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 260
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_17
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 260
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 64
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 18.5}
+        - {x: -16, y: 10.5}
+        - {x: -32, y: 0.5}
+        - {x: -32, y: -10.5}
+        - {x: -24, y: -18.5}
+        - {x: 23, y: -18.5}
+        - {x: 32, y: 0.5}
+        - {x: 32, y: 15.5}
+        - {x: 25, y: 18.5}
+    - name: wolf_base_20
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 288
+        width: 64
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 20.5}
+        - {x: -19, y: 8.5}
+        - {x: -32, y: -4.5}
+        - {x: -32, y: -16.5}
+        - {x: -25, y: -20.5}
+        - {x: 24, y: -20.5}
+        - {x: 32, y: 4.5}
+        - {x: 32, y: 19.5}
+        - {x: 31, y: 20.5}
+    - name: wolf_base_21
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 288
+        width: 61
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 20.5}
+        - {x: -30.5, y: -4.5}
+        - {x: -30.5, y: -20.5}
+        - {x: 30.5, y: -20.5}
+        - {x: 30.5, y: 20.5}
+    - name: wolf_base_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_25
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 256
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.5, y: 16}
+        - {x: -10.5, y: 16}
+        - {x: -31.5, y: 12}
+        - {x: -31.5, y: -11}
+        - {x: -21.5, y: -16}
+        - {x: 22.5, y: -16}
+        - {x: 25.5, y: -13}
+        - {x: 31.5, y: 0}
+        - {x: 31.5, y: 15}
+    - name: wolf_base_26
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 192
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_27
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 197
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_28
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 192
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_29
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 194
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_30
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 195
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_31
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 194
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_32
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 195
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_34
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 224
+        width: 60
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_35
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 224
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 16}
+        - {x: -31.5, y: -16}
+        - {x: 31.5, y: -16}
+        - {x: 31.5, y: 13}
+        - {x: 25.5, y: 16}
+    - name: wolf_base_36
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_37
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 192
+        width: 60
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_38
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: -8}
+        - {x: 32, y: -6}
+        - {x: 32, y: 16}
+        - {x: -28, y: 16}
+        - {x: -32, y: 12}
+        - {x: -32, y: -16}
+        - {x: -10, y: -16}
+        - {x: -10, y: -12}
+        - {x: -4, y: -16}
+        - {x: 19, y: -16}
+    - name: wolf_base_39
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 133
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_40
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 131
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_41
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 128
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_42
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 128
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_43
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 130
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_44
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 131
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_45
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 130
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_46
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 129
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_47
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 132
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_48
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 131
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_49
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_50
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 160
+        width: 63
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_51
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 160
+        width: 61
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_52
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 160
+        width: 60
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_53
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 65
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_54
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 65
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_55
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 65
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_56
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 65
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_57
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 65
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_58
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 68
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_59
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 68
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_60
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 67
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_61
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 68
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_62
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 68
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_63
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_64
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 64
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: -9.5}
+        - {x: 32, y: 3.5}
+        - {x: -2, y: 18.5}
+        - {x: -23, y: 18.5}
+        - {x: -32, y: 11.5}
+        - {x: -32, y: 0.5}
+        - {x: -20, y: -18.5}
+        - {x: -7, y: -18.5}
+        - {x: -4, y: -14.5}
+        - {x: 0, y: -18.5}
+        - {x: 18, y: -18.5}
+    - name: wolf_base_65
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 64
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 20.5}
+        - {x: -32, y: -11.5}
+        - {x: -30, y: -20.5}
+        - {x: 26, y: -20.5}
+        - {x: 32, y: -14.5}
+        - {x: 32, y: -2.5}
+        - {x: -2, y: 20.5}
+    - name: wolf_base_66
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 96
+        width: 61
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 20.5}
+        - {x: -26.5, y: 20.5}
+        - {x: -30.5, y: 19.5}
+        - {x: -30.5, y: 6.5}
+        - {x: -20.5, y: -20.5}
+        - {x: 29.5, y: -20.5}
+        - {x: 30.5, y: -19.5}
+        - {x: 30.5, y: -3.5}
+    - name: wolf_base_67
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_68
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_69
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_70
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 16}
+        - {x: -27.5, y: 16}
+        - {x: -31.5, y: 8}
+        - {x: -31.5, y: -5}
+        - {x: -21.5, y: -16}
+        - {x: 26.5, y: -16}
+        - {x: 31.5, y: -7}
+        - {x: 31.5, y: 7}
+    - name: wolf_base_71
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_72
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 32
+        width: 60
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_73
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 32
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: 13}
+        - {x: -3.5, y: 16}
+        - {x: -26.5, y: 16}
+        - {x: -31.5, y: 8}
+        - {x: -31.5, y: -16}
+        - {x: 31.5, y: -16}
+    - name: wolf_base_74
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_75
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 60
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_76
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: 16}
+        - {x: -27, y: 16}
+        - {x: -32, y: 15}
+        - {x: -32, y: -5}
+        - {x: -18, y: -16}
+        - {x: 32, y: -16}
+        - {x: 32, y: 5}
+    - name: wolf_base_77
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 0
+        width: 63
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_78
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 14}
+        - {x: -2, y: 16}
+        - {x: -28, y: 16}
+        - {x: -32, y: 9}
+        - {x: -32, y: -6}
+        - {x: -24, y: -16}
+        - {x: 27, y: -16}
+        - {x: 32, y: -4}
+        - {x: 32, y: 4}
+        - {x: 25, y: 9}
+    - name: wolf_base_79
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 65
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 15}
+        - {x: 3.5, y: 16}
+        - {x: -27.5, y: 16}
+        - {x: -32.5, y: 12}
+        - {x: -32.5, y: -8}
+        - {x: -28.5, y: -16}
+        - {x: 21.5, y: -16}
+        - {x: 29.5, y: -9}
+        - {x: 32.5, y: -5}
+        - {x: 32.5, y: 6}
+    - name: wolf_base_80
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1
+        width: 65
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wolf_base_81
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 32
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 16}
+        - {x: -32, y: 8}
+        - {x: -32, y: -7}
+        - {x: -27, y: -16}
+        - {x: 18, y: -16}
+        - {x: 23, y: -15}
+        - {x: 32, y: -1}
+        - {x: 32, y: 9}
+        - {x: 21, y: 16}
+    - name: wolf_base_82
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -28, y: 13}
+        - {x: -32, y: 4}
+        - {x: -32, y: -3}
+        - {x: -28, y: -3}
+        - {x: -27, y: -16}
+        - {x: 32, y: -16}
+        - {x: 32, y: 14}
+        - {x: 31, y: 16}
+    - name: wolf_base_83
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31, y: 16}
+        - {x: -5, y: 16}
+        - {x: -32, y: 8}
+        - {x: -32, y: -14}
+        - {x: -27, y: -16}
+        - {x: 24, y: -16}
+        - {x: 32, y: 0}
+        - {x: 32, y: 13}
+    - name: wolf_base_84
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 224
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: 16}
+        - {x: -31.5, y: 14}
+        - {x: -31.5, y: -9}
+        - {x: -22.5, y: -16}
+        - {x: 27.5, y: -16}
+        - {x: 31.5, y: -11}
+        - {x: 31.5, y: 16}
+    - name: wolf_base_85
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 16}
+        - {x: -32, y: 13}
+        - {x: -32, y: -1}
+        - {x: -25, y: -16}
+        - {x: 21, y: -16}
+        - {x: 32, y: -5}
+        - {x: 32, y: 8}
+        - {x: 25, y: 16}
+    - name: wolf_base_86
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 16}
+        - {x: -32, y: 7}
+        - {x: -32, y: -12}
+        - {x: -28, y: -16}
+        - {x: 23, y: -16}
+        - {x: 32, y: -2}
+        - {x: 32, y: 12}
+        - {x: 28, y: 16}
+    - name: wolf_base_87
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 197
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
