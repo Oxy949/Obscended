@@ -1,0 +1,2025 @@
+fileFormatVersion: 2
+guid: 3ba82fdd806340740b6093695e56d15e
+timeCreated: 1453901130
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: horror_items_0
+    21300002: horror_items_1
+    21300004: horror_items_2
+    21300006: horror_items_3
+    21300008: horror_items_4
+    21300010: horror_items_5
+    21300012: horror_items_6
+    21300014: horror_items_8
+    21300016: horror_items_9
+    21300018: horror_items_10
+    21300020: horror_items_11
+    21300022: horror_items_12
+    21300024: horror_items_13
+    21300026: horror_items_14
+    21300028: horror_items_15
+    21300030: horror_items_16
+    21300032: horror_items_17
+    21300034: horror_items_18
+    21300036: horror_items_19
+    21300038: horror_items_20
+    21300040: horror_items_21
+    21300042: horror_items_22
+    21300044: horror_items_23
+    21300046: horror_items_24
+    21300048: horror_items_26
+    21300050: horror_items_27
+    21300052: horror_items_28
+    21300054: horror_items_29
+    21300056: horror_items_30
+    21300058: horror_items_31
+    21300060: horror_items_32
+    21300062: horror_items_33
+    21300064: horror_items_34
+    21300066: horror_items_35
+    21300068: horror_items_36
+    21300070: horror_items_37
+    21300072: horror_items_38
+    21300074: horror_items_39
+    21300076: horror_items_40
+    21300078: horror_items_41
+    21300080: horror_items_42
+    21300082: horror_items_43
+    21300084: horror_items_44
+    21300086: horror_items_45
+    21300088: horror_items_46
+    21300090: horror_items_47
+    21300092: horror_items_48
+    21300094: horror_items_49
+    21300096: horror_items_50
+    21300098: horror_items_51
+    21300100: horror_items_52
+    21300102: horror_items_53
+    21300104: horror_items_54
+    21300106: horror_items_55
+    21300108: horror_items_56
+    21300110: horror_items_57
+    21300112: horror_items_58
+    21300114: horror_items_59
+    21300116: horror_items_60
+    21300118: horror_items_61
+    21300120: horror_items_62
+    21300122: horror_items_63
+    21300124: horror_items_64
+    21300126: horror_items_65
+    21300128: horror_items_66
+    21300130: horror_items_67
+    21300132: horror_items_68
+    21300134: horror_items_69
+    21300136: horror_items_70
+    21300138: horror_items_72
+    21300140: horror_items_73
+    21300142: horror_items_74
+    21300144: horror_items_75
+    21300146: horror_items_76
+    21300148: horror_items_77
+    21300150: horror_items_78
+    21300152: horror_items_79
+    21300154: horror_items_80
+    21300156: horror_items_81
+    21300158: horror_items_82
+    21300160: horror_items_83
+    21300162: horror_items_84
+    21300164: horror_items_85
+    21300166: horror_items_86
+    21300168: horror_items_87
+    21300170: horror_items_88
+    21300172: horror_items_89
+    21300174: horror_items_91
+    21300176: horror_items_92
+    21300178: horror_items_93
+    21300180: horror_items_94
+    21300182: horror_items_95
+    21300184: horror_items_96
+    21300186: horror_items_97
+    21300188: horror_items_98
+    21300190: horror_items_99
+    21300192: horror_items_100
+    21300194: horror_items_101
+    21300196: horror_items_102
+    21300198: horror_items_103
+    21300200: horror_items_104
+    21300202: horror_items_105
+    21300204: horror_items_106
+    21300206: horror_items_107
+    21300208: horror_items_108
+    21300210: horror_items_109
+    21300212: horror_items_110
+    21300214: horror_items_111
+    21300216: horror_items_112
+    21300218: horror_items_113
+    21300220: horror_items_114
+    21300222: horror_items_115
+    21300224: horror_items_116
+    21300226: horror_items_117
+    21300228: horror_items_7
+    21300230: horror_items_118
+    21300232: horror_items_119
+    21300234: horror_items_120
+    21300236: horror_items_121
+    21300238: horror_items_25
+    21300240: horror_items_122
+    21300242: horror_items_123
+    21300244: horror_items_124
+    21300246: horror_items_71
+    21300248: horror_items_125
+    21300250: horror_items_90
+    21300252: horror_items_126
+    21300254: horror_items_127
+    21300256: horror_items_128
+    21300258: horror_items_129
+    21300260: horror_items_130
+    21300262: horror_items_131
+    21300264: horror_items_132
+    21300266: horror_items_133
+    21300268: horror_items_134
+    21300270: horror_items_135
+    21300272: horror_items_136
+    21300274: horror_items_137
+    21300276: horror_items_138
+    21300278: horror_items_139
+    21300280: horror_items_140
+    21300282: horror_items_141
+    21300284: horror_items_142
+    21300286: horror_items_143
+    21300288: horror_items_144
+    21300290: horror_items_145
+    21300292: horror_items_146
+    21300294: horror_items_147
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: 4
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: horror_items_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 465
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 500
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 500
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 453
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 487
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 460
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.5, y: 25}
+        - {x: -29.5, y: -24}
+        - {x: -28.5, y: -25}
+        - {x: 29.5, y: -25}
+        - {x: 29.5, y: 25}
+    - name: horror_items_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 479
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 16.5}
+        - {x: -16.5, y: -16.5}
+        - {x: 16.5, y: -16.5}
+        - {x: 16.5, y: 16.5}
+    - name: horror_items_8
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 482
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_9
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 482
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_10
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 460
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_11
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 480
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 454
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_13
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 428
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_14
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 456
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_15
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 461
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_16
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 454
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_17
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 452
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_18
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 452
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_19
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 449
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 432
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_21
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 432
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_22
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 433
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_23
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 434
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_24
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 392
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_26
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 425
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_27
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 396
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_28
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 390
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_29
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 397
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_30
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 394
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_31
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 400
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_32
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 400
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_33
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 400
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 386
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_35
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 384
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_36
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 320
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_37
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 339
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_38
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 335
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_39
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 335
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 24}
+        - {x: -31, y: -24}
+        - {x: 31, y: -24}
+        - {x: 31, y: 24}
+    - name: horror_items_40
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 375
+        width: 19
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 325
+        width: 65
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.5, y: -1.5}
+        - {x: -32.5, y: -23.5}
+        - {x: -31.5, y: -25.5}
+        - {x: -6.5, y: -25.5}
+        - {x: 1.5, y: -16.5}
+        - {x: 1.5, y: -12.5}
+        - {x: -4.5, y: -1.5}
+      - - {x: -32.5, y: 25.5}
+        - {x: -32.5, y: 16.5}
+        - {x: 8.5, y: -25.5}
+        - {x: 25.5, y: -25.5}
+        - {x: 32.5, y: -10.5}
+        - {x: 32.5, y: 25.5}
+      - - {x: 29.5, y: -25.5}
+        - {x: 32.5, y: -25.5}
+        - {x: 32.5, y: -4.5}
+        - {x: 29.5, y: -5.5}
+    - name: horror_items_42
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 352
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_43
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 355
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_44
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 352
+        width: 50
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_45
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 351
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_46
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 327
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_47
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 325
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_48
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 321
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 96
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_50
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 294
+        width: 12
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_51
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 330
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_52
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 322
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_53
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 256
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_54
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 256
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_55
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 256
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_56
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 256
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_57
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_58
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 256
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_59
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 256
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 26.5}
+        - {x: -27, y: 22.5}
+        - {x: -27, y: -26.5}
+        - {x: 27, y: -26.5}
+        - {x: 27, y: 16.5}
+        - {x: 19, y: 26.5}
+    - name: horror_items_60
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 296
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_61
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 298
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_62
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 298
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 298
+        width: 64
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_64
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 288
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_65
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 288
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_66
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 256
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_67
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 267
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_68
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 268
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_69
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 259
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_70
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 268
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_72
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 264
+        width: 54
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_73
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 261
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_74
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 213
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_75
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 210
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_76
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 216
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_77
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 214
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_78
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 211
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_79
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 211
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_80
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 211
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_81
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 217
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_82
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 195
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.5, y: 7}
+        - {x: 28.5, y: 17}
+        - {x: 28.5, y: 30}
+        - {x: -28.5, y: 30}
+        - {x: -28.5, y: -30}
+        - {x: -2.5, y: -30}
+        - {x: 5.5, y: -13}
+        - {x: -7.5, y: -6}
+        - {x: -11.5, y: -7}
+    - name: horror_items_83
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 195
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.5, y: 30}
+        - {x: -28.5, y: 13}
+        - {x: -15.5, y: 7}
+        - {x: -6.5, y: -12}
+        - {x: 4.5, y: -29}
+        - {x: 5.5, y: -30}
+        - {x: 28.5, y: -30}
+        - {x: 28.5, y: 17}
+        - {x: 12.5, y: 30}
+    - name: horror_items_84
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 195
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.5, y: 7}
+        - {x: 28.5, y: 17}
+        - {x: 28.5, y: 30}
+        - {x: -28.5, y: 30}
+        - {x: -28.5, y: -30}
+        - {x: -2.5, y: -30}
+        - {x: 5.5, y: -13}
+        - {x: -7.5, y: -6}
+        - {x: -11.5, y: -7}
+    - name: horror_items_85
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 192
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.5, y: 31.5}
+        - {x: -28.5, y: -31.5}
+        - {x: 27.5, y: -31.5}
+        - {x: 28.5, y: -30.5}
+        - {x: 28.5, y: 20.5}
+        - {x: 3.5, y: 31.5}
+    - name: horror_items_86
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 147
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_87
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 147
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_88
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 147
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_89
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 147
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_91
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 135
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_92
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 135
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_93
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 141
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_94
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 141
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_95
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 64
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 31.5}
+        - {x: -27, y: -31.5}
+        - {x: 27, y: -31.5}
+        - {x: 27, y: 31.5}
+    - name: horror_items_96
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 105
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_97
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 106
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_98
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 30}
+        - {x: -16, y: -30}
+        - {x: 16, y: -30}
+        - {x: 16, y: 30}
+    - name: horror_items_99
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 63
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 27}
+        - {x: -29.5, y: 25}
+        - {x: -29.5, y: -31}
+        - {x: 29.5, y: -31}
+        - {x: 29.5, y: 25}
+        - {x: 25.5, y: 27}
+    - name: horror_items_100
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 63
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 27}
+        - {x: -29.5, y: 25}
+        - {x: -29.5, y: -31}
+        - {x: 29.5, y: -31}
+        - {x: 29.5, y: 25}
+        - {x: 25.5, y: 27}
+    - name: horror_items_101
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 3
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_102
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 72
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_103
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2
+        width: 19
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_104
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 5
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_105
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: -26}
+        - {x: 20, y: -26}
+        - {x: 20, y: -5}
+        - {x: 12, y: 26}
+        - {x: -10, y: 26}
+        - {x: -20, y: 6}
+    - name: horror_items_106
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 34
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_107
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 34
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_108
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 0
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 26}
+        - {x: -30, y: 25}
+        - {x: -30, y: -30}
+        - {x: 27, y: -30}
+        - {x: 30, y: -27}
+        - {x: 30, y: 23}
+        - {x: 17, y: 26}
+    - name: horror_items_109
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 0
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 26}
+        - {x: -29.5, y: 20}
+        - {x: -29.5, y: -27}
+        - {x: -26.5, y: -30}
+        - {x: 27.5, y: -30}
+        - {x: 29.5, y: -28}
+        - {x: 29.5, y: 20}
+        - {x: 14.5, y: 26}
+    - name: horror_items_110
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_111
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 2
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_112
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_113
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 480
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_114
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 480
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_115
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 447
+        width: 61
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 16}
+        - {x: -30.5, y: -16}
+        - {x: 30.5, y: -16}
+        - {x: 30.5, y: 16}
+    - name: horror_items_116
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 447
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: 16}
+        - {x: -27.5, y: -15}
+        - {x: -8.5, y: -16}
+        - {x: 27.5, y: -16}
+        - {x: 27.5, y: 15}
+        - {x: 26.5, y: 16}
+    - name: horror_items_117
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 416
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_7
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 416
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: 16}
+        - {x: -27.5, y: -16}
+        - {x: 27.5, y: -16}
+        - {x: 27.5, y: 15}
+        - {x: 26.5, y: 16}
+    - name: horror_items_118
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 384
+        width: 54
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_119
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 384
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_120
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 351
+        width: 53
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 16.5}
+        - {x: -26.5, y: -15.5}
+        - {x: -3.5, y: -16.5}
+        - {x: 26.5, y: -16.5}
+        - {x: 26.5, y: 16.5}
+    - name: horror_items_121
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 350
+        width: 63
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 17}
+        - {x: -31.5, y: -17}
+        - {x: 31.5, y: -17}
+        - {x: 31.5, y: 17}
+    - name: horror_items_25
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 418
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_122
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 386
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31.5}
+        - {x: -16, y: -31.5}
+        - {x: 10, y: -31.5}
+        - {x: 16, y: -14.5}
+        - {x: 16, y: 31.5}
+    - name: horror_items_123
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 414
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_124
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 390
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_71
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 14}
+        - {x: -16, y: 6}
+        - {x: -16, y: -12}
+        - {x: -9, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 14}
+    - name: horror_items_125
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 256
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_90
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 129
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 31}
+        - {x: -16.5, y: -29}
+        - {x: -15.5, y: -31}
+        - {x: 16.5, y: -31}
+        - {x: 16.5, y: 31}
+    - name: horror_items_126
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 128
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_127
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 129
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 31}
+        - {x: -16.5, y: -28}
+        - {x: -15.5, y: -31}
+        - {x: 16.5, y: -31}
+        - {x: 16.5, y: 31}
+    - name: horror_items_128
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 129
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_129
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 65
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 20.5}
+        - {x: -16, y: -20.5}
+        - {x: 16, y: -20.5}
+        - {x: 16, y: 20.5}
+    - name: horror_items_130
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 21}
+        - {x: -16, y: -21}
+        - {x: 16, y: -21}
+        - {x: 16, y: 21}
+    - name: horror_items_131
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 20}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+        - {x: 16, y: 20}
+    - name: horror_items_132
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 65
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 14}
+        - {x: 12, y: 16}
+    - name: horror_items_133
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 32
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_134
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 33
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_135
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 32
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_136
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_137
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_138
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_139
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 65
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31}
+        - {x: -16, y: -31}
+        - {x: 16, y: -31}
+        - {x: 16, y: 31}
+    - name: horror_items_140
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 65
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_141
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 68
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 28.5}
+        - {x: -16.5, y: -28.5}
+        - {x: 16.5, y: -28.5}
+        - {x: 16.5, y: 28.5}
+    - name: horror_items_142
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 66
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 29.5}
+        - {x: -16.5, y: -29.5}
+        - {x: 16.5, y: -29.5}
+        - {x: 16.5, y: 29.5}
+    - name: horror_items_143
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 29}
+        - {x: -16, y: -29}
+        - {x: 16, y: -29}
+        - {x: 16, y: 29}
+    - name: horror_items_144
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 29.5}
+        - {x: -16, y: -29.5}
+        - {x: 16, y: -29.5}
+        - {x: 16, y: 29.5}
+    - name: horror_items_145
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 418
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_146
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 447
+        width: 7
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: horror_items_147
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 491
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
