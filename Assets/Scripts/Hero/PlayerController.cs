@@ -4,17 +4,19 @@ using UnityStandardAssets.CrossPlatformInput;
 using System;
 
 public class PlayerController : MonoBehaviour {
-    public float maxSpeed = 10f;
+    public float maxSpeedX = 10f;
+    public float maxSpeedY = 10f;
     public float interactionDistance = 0.2f;
     public GameObject interactionObj;
     public bool interactionObjFounded = false;
     private Vector2 currentSpeed;
-    private Animator animator;
+    
     private Rigidbody2D rigidbody2D;
     private MessageSystem msystem;
     private Vector3 lastPosition;
 
     private bool isInteracting = false;
+    private SimpleAnimator animator;
 
     public bool isInteractingNow()
     {
@@ -23,7 +25,7 @@ public class PlayerController : MonoBehaviour {
 
     private void Awake()
     {
-        animator = GetComponentInChildren<Animator>();
+        animator = GetComponentInChildren<SimpleAnimator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
         msystem = GameObject.Find("Scene").GetComponent<MessageSystem>();
     }
@@ -56,7 +58,7 @@ public class PlayerController : MonoBehaviour {
             {
                 if (closestIntObj.GetComponent<InteractableObject>().useFacingDirection)
                 {
-                    if (direction == animator.GetInteger("direction"))
+                    if (direction == animator.direction)
                     {
                         interactionObj = closestIntObj;
                         isInteracting = true;
@@ -84,21 +86,27 @@ public class PlayerController : MonoBehaviour {
         if (currentSpeed != Vector2.zero)
         {
             int direction = GetIntDirection(moveX, moveY);
-            animator.SetInteger("direction", direction);
+            animator.direction = direction;
         }
 
         float speed = Distance(transform.position - lastPosition);
         if (speed > 0.01f)
         {
-            animator.SetFloat("speed", 0.2f);
+            animator.speed = 0.2f;
 
         }
         else
         {
-            animator.SetFloat("speed", 0);
+            animator.speed = 0;
         }
 
-        animator.SetBool("isInteracting", isInteracting);
+        animator.isInteracting = isInteracting;
+
+        if (msystem.isShowing)
+        {
+            lastPosition = transform.position;
+            animator.speed = 0;
+        }
     }
 
     private int GetIntDirection(float moveX, float moveY)
@@ -160,7 +168,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (!msystem.isShowing)
         {
-            rigidbody2D.MovePosition(rigidbody2D.position + currentSpeed * maxSpeed * Time.deltaTime);
+            rigidbody2D.MovePosition(rigidbody2D.position + (new Vector2(currentSpeed.x * maxSpeedX, currentSpeed.y * maxSpeedY) * Time.deltaTime));
             lastPosition = transform.position;
         }
     }
