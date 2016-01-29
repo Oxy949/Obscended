@@ -99,6 +99,11 @@ public class PlayerController : MonoBehaviour {
         }
 
         animator.SetBool("isInteracting", isInteracting);
+
+        if (msystem.isShowing)
+        {
+            animator.SetFloat("speed", 0);
+        }
     }
 
     private int GetIntDirection(float moveX, float moveY)
