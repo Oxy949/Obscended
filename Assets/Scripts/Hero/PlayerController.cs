@@ -4,7 +4,8 @@ using UnityStandardAssets.CrossPlatformInput;
 using System;
 
 public class PlayerController : MonoBehaviour {
-    public float maxSpeed = 10f;
+    public float maxSpeedX = 10f;
+    public float maxSpeedY = 10f;
     public float interactionDistance = 0.2f;
     public GameObject interactionObj;
     public bool interactionObjFounded = false;
@@ -99,6 +100,12 @@ public class PlayerController : MonoBehaviour {
         }
 
         animator.SetBool("isInteracting", isInteracting);
+
+        if (msystem.isShowing)
+        {
+            lastPosition = transform.position;
+            animator.SetFloat("speed", 0);
+        }
     }
 
     private int GetIntDirection(float moveX, float moveY)
@@ -160,7 +167,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (!msystem.isShowing)
         {
-            rigidbody2D.MovePosition(rigidbody2D.position + currentSpeed * maxSpeed * Time.deltaTime);
+            rigidbody2D.MovePosition(rigidbody2D.position + (new Vector2(currentSpeed.x * maxSpeedX, currentSpeed.y * maxSpeedY) * Time.deltaTime));
             lastPosition = transform.position;
         }
     }
