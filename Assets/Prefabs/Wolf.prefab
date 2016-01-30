@@ -117,7 +117,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.8}
   serializedVersion: 2
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.4}
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 1.2}
+  m_Size: {x: 0.5, y: 1.1}
 --- !u!95 &9587562
 Animator:
   serializedVersion: 3
@@ -179,8 +179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  maxSpeedX: 1
-  maxSpeedY: 1
+  maxSpeedX: 2.4
+  maxSpeedY: 1.9
 --- !u!114 &11469256
 MonoBehaviour:
   m_ObjectHideFlags: 1
