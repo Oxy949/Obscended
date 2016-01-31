@@ -51,25 +51,28 @@ public class PlayerController : MonoBehaviour {
         Vector3 intPointPosition = transform.FindChild("InteractionPoint").transform.position;
 
 
-        if (!isInteracting && Distance2D(intPointPosition - closestIntObj.transform.position) < closestIntObj.GetComponent<InteractableObject>().radius)
+        if (closestIntObj)
         {
-            int direction = GetIntDirection(closestIntObj.transform.position.x - intPointPosition.x, closestIntObj.transform.position.y - intPointPosition.y);
-            if (jumpButton)
+            if (!isInteracting && Distance2D(intPointPosition - closestIntObj.transform.position) < closestIntObj.GetComponent<InteractableObject>().radius)
             {
-                if (closestIntObj.GetComponent<InteractableObject>().useFacingDirection)
+                int direction = GetIntDirection(closestIntObj.transform.position.x - intPointPosition.x, closestIntObj.transform.position.y - intPointPosition.y);
+                if (jumpButton)
                 {
-                    if (direction == animator.direction)
+                    if (closestIntObj.GetComponent<InteractableObject>().useFacingDirection)
+                    {
+                        if (direction == animator.direction)
+                        {
+                            interactionObj = closestIntObj;
+                            isInteracting = true;
+                            StartCoroutine("Interact", interactionObj.GetComponent<InteractableObject>().interactionTime);
+                        }
+                    }
+                    else
                     {
                         interactionObj = closestIntObj;
                         isInteracting = true;
                         StartCoroutine("Interact", interactionObj.GetComponent<InteractableObject>().interactionTime);
                     }
-                }
-                else
-                {
-                    interactionObj = closestIntObj;
-                    isInteracting = true;
-                    StartCoroutine("Interact", interactionObj.GetComponent<InteractableObject>().interactionTime);
                 }
             }
         }
