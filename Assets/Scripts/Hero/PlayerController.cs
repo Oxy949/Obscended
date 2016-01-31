@@ -153,7 +153,7 @@ public class PlayerController : MonoBehaviour {
         Vector3 position = transform.position;
         foreach (GameObject go in gos)
         {
-            Vector3 diff = go.transform.position - position;
+            Vector3 diff = new Vector3(go.transform.position.x - position.x, go.transform.position.y - position.y, 0);
             float curDistance = diff.sqrMagnitude;
             if (curDistance < distance)
             {
