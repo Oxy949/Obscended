@@ -15,20 +15,22 @@ public class SceneLoader : MonoBehaviour {
 	
 	}
 
-    public void LoadScene(string sceneId)
+    public void LoadScene(string sceneName)
     {
-        if (sceneId == "/reload")
+        if (sceneName == "/reload")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        if (sceneId != "/exit")
-            SceneManager.LoadScene(sceneId);
-        else {
+
+        if (sceneName == "/exit")
+        {
 #if UNITY_EDITOR
             EditorApplication.isPlaying = false;
 #else
 			Application.Quit();
 #endif
         }
+
+        SceneManager.LoadScene(sceneName);
     }
 }
