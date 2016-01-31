@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour {
         Vector3 intPointPosition = transform.FindChild("InteractionPoint").transform.position;
 
 
-        if (!isInteracting && Distance(intPointPosition - closestIntObj.transform.position) < closestIntObj.GetComponent<InteractableObject>().radius)
+        if (!isInteracting && Distance2D(intPointPosition - closestIntObj.transform.position) < closestIntObj.GetComponent<InteractableObject>().radius)
         {
             int direction = GetIntDirection(closestIntObj.transform.position.x - intPointPosition.x, closestIntObj.transform.position.y - intPointPosition.y);
             if (jumpButton)
@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour {
             animator.direction = direction;
         }
 
-        float speed = Distance(transform.position - lastPosition);
+        float speed = Distance2D(transform.position - lastPosition);
         if (speed > 0.01f)
         {
             animator.speed = 0.2f;
@@ -153,7 +153,7 @@ public class PlayerController : MonoBehaviour {
         Vector3 position = transform.position;
         foreach (GameObject go in gos)
         {
-            Vector3 diff = go.transform.position - position;
+            Vector3 diff = new Vector3(go.transform.position.x - position.x, go.transform.position.y - position.y, 0);
             float curDistance = diff.sqrMagnitude;
             if (curDistance < distance)
             {
@@ -173,11 +173,11 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    float Distance(Vector3 vec)
+    float Distance2D(Vector3 vec)
     {
         return Mathf.Sqrt(
           Mathf.Pow(vec.x, 2f) +
           Mathf.Pow(vec.y, 2f) +
-          Mathf.Pow(vec.z, 2f));
+          Mathf.Pow(0, 2f));
     }
 }

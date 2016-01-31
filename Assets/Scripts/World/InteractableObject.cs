@@ -16,11 +16,20 @@ public class InteractableObject : MonoBehaviour {
     public virtual void Update () {
         player = FindClosestPlayer();
         PlayerController pc = player.GetComponent<PlayerController>();
+
+        if (Distance2D(player.transform.position - transform.position) <= radius)
+            OnObjectNear();
+
         if (pc.isInteractingNow() && pc.interactionObj == gameObject && !pc.interactionObjFounded)
         {
             OnInteraction();
             pc.interactionObjFounded = true;
         }
+    }
+
+    public virtual void OnObjectNear()
+    {
+        Debug.Log("[InteractableObject] Can interact with " + transform.name);
     }
 
     public virtual void OnInteraction()
@@ -33,12 +42,12 @@ public class InteractableObject : MonoBehaviour {
         Debug.Log("[InteractableObject] Interacting finished " + transform.name);
     }
 
-    float Distance(Vector3 vec)
+    float Distance2D(Vector3 vec)
     {
         return Mathf.Sqrt(
           Mathf.Pow(vec.x, 2f) +
           Mathf.Pow(vec.y, 2f) +
-          Mathf.Pow(vec.z, 2f));
+          Mathf.Pow(0, 2f));
     }
 
     GameObject FindClosestPlayer()
@@ -50,7 +59,7 @@ public class InteractableObject : MonoBehaviour {
         Vector3 position = transform.position;
         foreach (GameObject go in gos)
         {
-            Vector3 diff = go.transform.position - position;
+            Vector3 diff = new Vector3(go.transform.position.x - position.x, go.transform.position.y - position.y, 0);
             float curDistance = diff.sqrMagnitude;
             if (curDistance < distance)
             {
