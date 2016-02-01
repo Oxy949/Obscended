@@ -12,7 +12,6 @@ GameObject:
   - 92: {fileID: 9239794}
   - 124: {fileID: 12464434}
   - 81: {fileID: 8183102}
-  - 114: {fileID: 11423958}
   - 114: {fileID: 11421884}
   - 114: {fileID: 11485012}
   - 114: {fileID: 11433360}
@@ -45,7 +44,7 @@ Camera:
   m_GameObject: {fileID: 155656}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 3
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -130,24 +129,6 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: b61f0d8d8244b4b28aa66b0c8cb46a8d, type: 3}
   converted3DLut: {fileID: 0}
   basedOnTempTex: Assets/Cinema Suite/Cinema Themes/LUTs/Dreadful3D16.png
---- !u!114 &11423958
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155656}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e0191203c8830478943d31f4ef09e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useMouse: 0
-  usePixelGrid: 0
-  target: {fileID: 0}
-  damping: 0
-  lookAheadFactor: 0
-  lookAheadReturnSpeed: 0
-  lookAheadMoveThreshold: 0
 --- !u!114 &11433360
 MonoBehaviour:
   m_ObjectHideFlags: 1
