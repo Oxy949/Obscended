@@ -51,25 +51,28 @@ public class PlayerController : MonoBehaviour {
         Vector3 intPointPosition = transform.FindChild("InteractionPoint").transform.position;
 
 
-        if (!isInteracting && Distance(intPointPosition - closestIntObj.transform.position) < closestIntObj.GetComponent<InteractableObject>().radius)
+        if (closestIntObj)
         {
-            int direction = GetIntDirection(closestIntObj.transform.position.x - intPointPosition.x, closestIntObj.transform.position.y - intPointPosition.y);
-            if (jumpButton)
+            if (!isInteracting && Distance2D(intPointPosition - closestIntObj.transform.position) < closestIntObj.GetComponent<InteractableObject>().radius)
             {
-                if (closestIntObj.GetComponent<InteractableObject>().useFacingDirection)
+                int direction = GetIntDirection(closestIntObj.transform.position.x - intPointPosition.x, closestIntObj.transform.position.y - intPointPosition.y);
+                if (jumpButton)
                 {
-                    if (direction == animator.direction)
+                    if (closestIntObj.GetComponent<InteractableObject>().useFacingDirection)
+                    {
+                        if (direction == animator.direction)
+                        {
+                            interactionObj = closestIntObj;
+                            isInteracting = true;
+                            StartCoroutine("Interact", interactionObj.GetComponent<InteractableObject>().interactionTime);
+                        }
+                    }
+                    else
                     {
                         interactionObj = closestIntObj;
                         isInteracting = true;
                         StartCoroutine("Interact", interactionObj.GetComponent<InteractableObject>().interactionTime);
                     }
-                }
-                else
-                {
-                    interactionObj = closestIntObj;
-                    isInteracting = true;
-                    StartCoroutine("Interact", interactionObj.GetComponent<InteractableObject>().interactionTime);
                 }
             }
         }
@@ -89,7 +92,7 @@ public class PlayerController : MonoBehaviour {
             animator.direction = direction;
         }
 
-        float speed = Distance(transform.position - lastPosition);
+        float speed = Distance2D(transform.position - lastPosition);
         if (speed > 0.01f)
         {
             animator.speed = 0.2f;
@@ -173,11 +176,11 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    float Distance(Vector3 vec)
+    float Distance2D(Vector3 vec)
     {
         return Mathf.Sqrt(
           Mathf.Pow(vec.x, 2f) +
           Mathf.Pow(vec.y, 2f) +
-          Mathf.Pow(vec.z, 2f));
+          Mathf.Pow(0, 2f));
     }
 }

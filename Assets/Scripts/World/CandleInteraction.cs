@@ -14,8 +14,8 @@ public class CandleInteraction : InteractableObject
     public override void OnInteraction()
     {
         base.OnInteraction();
-        MessageSystem system = GameObject.Find("Scene").GetComponent<MessageSystem>();
-        system.AddMessage("Вы использовали переключатель.", "OK");
+        //MessageSystem system = GameObject.Find("Scene").GetComponent<MessageSystem>();
+        //system.AddMessage("Вы использовали переключатель.", "OK");
     }
 
     // Update is called once per frame

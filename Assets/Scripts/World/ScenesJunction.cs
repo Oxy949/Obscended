@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ScenesJunction : InteractableObject
 {
-    public string sceneID = "";
+    public string sceneName = "";
     SceneLoader loader;
 
     private void Awake()
@@ -13,6 +13,6 @@ public class ScenesJunction : InteractableObject
 
     public override void OnObjectNear()
     {
-        loader.LoadScene(sceneID);
+        loader.LoadScene(sceneName);
     }
 }

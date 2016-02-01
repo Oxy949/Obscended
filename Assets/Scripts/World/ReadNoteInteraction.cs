@@ -4,30 +4,7 @@ using System.Collections.Generic;
 
 public class ReadNoteInteraction : InteractableObject {
 
-//	private new GameObject light;
-	public override void Start()
-	{
-		base.Start();
-		Debug.Log("[CandleInteraction] Start()");
-//		light = transform.FindChild("2DLight").gameObject;
-	}
-
-	public override void OnInteraction()
-	{
-		base.OnInteraction();
-		MessageSystem system = GameObject.Find("Scene").GetComponent<MessageSystem>();
-		system.AddMessage("Вы использовали переключатель.", "OK");
-	}
-
-	// Update is called once per frame
-	public override void OnInteractionFinished() {
-		base.OnInteraction();
-		Debug.Log("[CandleInteraction] OnInteraction()");
-//		light.SetActive(!light.activeSelf);
-	}
-
-
-	/*public List<string> l_notesWords = new List<string>(); 
+	public string text = ""; 
 
 	public override void Start()
 	{
@@ -41,7 +18,8 @@ public class ReadNoteInteraction : InteractableObject {
 		MessageSystem system = GameObject.Find("Scene").GetComponent<MessageSystem>();
 		Debug.Log ("1");
 		//Получаем индекс записки из названия и выводим сообщение
-		system.AddMessage(l_notesWords[int.Parse(gameObject.name.Substring(gameObject.name.LastIndexOf('_') + 1))], "Закрыть");
+		system.AddMessage(text, "Закрыть");
+        this.gameObject.SetActive(false);
 	}
 
 	// Update is called once per frame
@@ -49,6 +27,6 @@ public class ReadNoteInteraction : InteractableObject {
 		base.OnInteraction();
 		//Debug.Log("[CandleInteraction] OnInteraction()");
 
-	}*/
+	}
 
 }

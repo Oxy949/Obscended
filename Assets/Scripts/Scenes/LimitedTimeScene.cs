@@ -34,6 +34,7 @@ public class LimitedTimeScene : MonoBehaviour
     {
         Debug.Log("[LimitedTimeScene] Time elapsed!");
         MessageSystem system = GameObject.Find("Scene").GetComponent<MessageSystem>();
+        transform.FindChild("TimerSound").GetComponent<AudioSource>().Stop();
         system.AddMessage("Время вышло!", "OK");
         CancelInvoke();
         hasElapsed = true;

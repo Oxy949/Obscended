@@ -29,7 +29,7 @@ public class InteractableObject : MonoBehaviour {
 
     public virtual void OnObjectNear()
     {
-        Debug.Log("[InteractableObject] Can interact with " + transform.name);
+        //Debug.Log("[InteractableObject] Can interact with " + transform.name);
     }
 
     public virtual void OnInteraction()
