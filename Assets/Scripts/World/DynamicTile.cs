@@ -9,7 +9,7 @@ public class DynamicTile : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-        player = GameObject.Find("Hero");
+        player = GameObject.FindGameObjectWithTag("Player");
         initZ = (int)transform.position.z;
     }
 	
