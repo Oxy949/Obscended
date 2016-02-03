@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class ReadNoteInteraction : InteractableObject {
 
 	public string text = ""; 
+	public bool destroyAfterRead = true;
 
 	public override void Start()
 	{
@@ -19,7 +20,9 @@ public class ReadNoteInteraction : InteractableObject {
 		Debug.Log ("1");
 		//Получаем индекс записки из названия и выводим сообщение
 		system.AddMessage(text, "Закрыть");
-        this.gameObject.SetActive(false);
+		if (destroyAfterRead) {
+			this.gameObject.SetActive (false);
+		}
 	}
 
 	// Update is called once per frame
