@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ffa79d42701641a4da6cb24d33f7f5e0
-timeCreated: 1453903366
+timeCreated: 1454499705
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -81,7 +81,7 @@ TextureImporter:
   textureFormat: 4
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -106,13 +106,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 448
-        width: 31
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 444
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -16, y: 48}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+        - {x: 16, y: 48}
     - name: horror_doors_and_windows_1
       rect:
         serializedVersion: 2
@@ -121,7 +125,7 @@ TextureImporter:
         width: 25
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_2
@@ -132,7 +136,7 @@ TextureImporter:
         width: 25
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_3
@@ -143,7 +147,7 @@ TextureImporter:
         width: 25
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_4
@@ -154,7 +158,7 @@ TextureImporter:
         width: 25
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_5
@@ -165,7 +169,7 @@ TextureImporter:
         width: 25
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_6
@@ -176,7 +180,7 @@ TextureImporter:
         width: 50
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -25, y: 30}
@@ -193,7 +197,7 @@ TextureImporter:
         width: 25
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_8
@@ -204,7 +208,7 @@ TextureImporter:
         width: 25
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_9
@@ -215,7 +219,7 @@ TextureImporter:
         width: 25
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_10
@@ -226,7 +230,7 @@ TextureImporter:
         width: 25
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_11
@@ -237,7 +241,7 @@ TextureImporter:
         width: 24
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_12
@@ -248,7 +252,7 @@ TextureImporter:
         width: 15
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_13
@@ -259,7 +263,7 @@ TextureImporter:
         width: 15
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_14
@@ -270,7 +274,7 @@ TextureImporter:
         width: 15
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_15
@@ -281,7 +285,7 @@ TextureImporter:
         width: 15
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_16
@@ -292,7 +296,7 @@ TextureImporter:
         width: 15
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_17
@@ -303,7 +307,7 @@ TextureImporter:
         width: 30
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_18
@@ -314,7 +318,7 @@ TextureImporter:
         width: 15
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_19
@@ -325,7 +329,7 @@ TextureImporter:
         width: 15
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_20
@@ -336,7 +340,7 @@ TextureImporter:
         width: 15
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_21
@@ -347,7 +351,7 @@ TextureImporter:
         width: 15
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_22
@@ -358,7 +362,7 @@ TextureImporter:
         width: 14
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_23
@@ -384,7 +388,7 @@ TextureImporter:
         width: 23
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_25
@@ -395,7 +399,7 @@ TextureImporter:
         width: 23
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_26
@@ -406,7 +410,7 @@ TextureImporter:
         width: 23
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_27
@@ -417,7 +421,7 @@ TextureImporter:
         width: 23
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_28
@@ -428,7 +432,7 @@ TextureImporter:
         width: 23
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_29
@@ -439,7 +443,7 @@ TextureImporter:
         width: 23
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_30
@@ -450,7 +454,7 @@ TextureImporter:
         width: 12
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_31
@@ -461,7 +465,7 @@ TextureImporter:
         width: 12
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_32
@@ -472,7 +476,7 @@ TextureImporter:
         width: 12
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_33
@@ -483,7 +487,7 @@ TextureImporter:
         width: 12
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_34
@@ -494,7 +498,7 @@ TextureImporter:
         width: 12
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_35
@@ -505,7 +509,7 @@ TextureImporter:
         width: 12
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: horror_doors_and_windows_36
@@ -647,17 +651,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 448
+        y: 444
         width: 32
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 30}
-        - {x: -16, y: -30}
-        - {x: 16, y: -30}
-        - {x: 16, y: 30}
+      - - {x: -16, y: 48}
+        - {x: -16, y: -14}
+        - {x: 16, y: -14}
+        - {x: 16, y: 48}
     - name: horror_doors_and_windows_46
       rect:
         serializedVersion: 2
