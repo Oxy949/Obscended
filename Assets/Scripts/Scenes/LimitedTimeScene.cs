@@ -30,7 +30,7 @@ public class LimitedTimeScene : MonoBehaviour
     }
 
     //may not be needed, left it in there
-    void timeElapsed()
+    public virtual void timeElapsed()
     {
         Debug.Log("[LimitedTimeScene] Time elapsed!");
         MessageSystem system = GameObject.Find("Scene").GetComponent<MessageSystem>();
@@ -40,4 +40,10 @@ public class LimitedTimeScene : MonoBehaviour
         hasElapsed = true;
     }
 
+    public virtual void onAllConditionsCompleated()
+    {
+        Debug.Log("[LimitedTimeScene] All conditions compleated!");
+        CancelInvoke();
+        transform.FindChild("TimerSound").GetComponent<AudioSource>().Stop();
+    }
 }
