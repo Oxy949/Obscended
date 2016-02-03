@@ -16,8 +16,10 @@ public class MSMessage
 
 public class MessageSystem : MonoBehaviour {
 
-    public GameObject window;
-    private GameObject windowInstantiate;
+    public GameObject noteMessage;
+    public GameObject dialodMessage;
+    private GameObject noteMessageInstantiate;
+    private GameObject dialodMessageInstantiate;
     public bool isShowing = false;
     private List<MSMessage> list;
 
@@ -26,19 +28,19 @@ public class MessageSystem : MonoBehaviour {
         //window.SetActive(isShowing);
         list = new List<MSMessage>() { };
 
-        windowInstantiate = Instantiate(window) as GameObject;
-        windowInstantiate.name = "Canvas-MessageSystem";
+        noteMessageInstantiate = Instantiate(noteMessage) as GameObject;
+        noteMessageInstantiate.name = "Canvas-MessageSystem";
 
         if (GameObject.Find("Canvas"))
         {
             //Log ("Using default canvas");
-            windowInstantiate.transform.SetParent(GameObject.Find("Canvas").transform, true);
+            noteMessageInstantiate.transform.SetParent(GameObject.Find("Canvas").transform);
         }
 
-        windowInstantiate.GetComponent<RectTransform>().anchoredPosition = new Vector2(0,0);
-        windowInstantiate.transform.localScale = new Vector3(1, 1, 1);
+        noteMessageInstantiate.GetComponent<RectTransform>().anchoredPosition = new Vector2(0,0);
+        noteMessageInstantiate.transform.localScale = new Vector3(1, 1, 1);
 
-        windowInstantiate.SetActive(isShowing);
+        noteMessageInstantiate.SetActive(isShowing);
     }
 
     public void InvokeCode(string code)
@@ -64,11 +66,11 @@ public class MessageSystem : MonoBehaviour {
 
     public void ShowMessage(string text, string buttontext)
     {
-        windowInstantiate.transform.FindChild("MessageText").GetComponent<Text>().text = text;
-        windowInstantiate.transform.FindChild("MessageButton").GetComponentInChildren<Text>().text = buttontext;
+        noteMessageInstantiate.transform.FindChild("MessageText").GetComponent<Text>().text = text;
+        noteMessageInstantiate.transform.FindChild("MessageButton").GetComponentInChildren<Text>().text = buttontext;
         isShowing = true;
-        windowInstantiate.SetActive(isShowing);
-        windowInstantiate.transform.FindChild("MessageButton").GetComponent<Button>().Select();
+        noteMessageInstantiate.SetActive(isShowing);
+        noteMessageInstantiate.transform.FindChild("MessageButton").GetComponent<Button>().Select();
     }
 
     public void HideMessage()
@@ -77,7 +79,7 @@ public class MessageSystem : MonoBehaviour {
         /*windowInstantiate.transform.FindChild("MessageText").GetComponent<Text>().text = text;
         windowInstantiate.transform.FindChild("MessageButton").GetComponentInChildren<Text>().text = buttontext;*/
         isShowing = false;
-        windowInstantiate.SetActive(isShowing);
+        noteMessageInstantiate.SetActive(isShowing);
     }
 
     // Update is called once per frame

@@ -20,7 +20,7 @@ public class CandleInteraction : InteractableObject
 
     // Update is called once per frame
     public override void OnInteractionFinished() {
-        base.OnInteraction();
+        base.OnInteractionFinished();
         //Debug.Log("[CandleInteraction] OnInteraction()");
         light.SetActive(!light.activeSelf);
     }

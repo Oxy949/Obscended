@@ -10,14 +10,14 @@ public class ReadNoteInteraction : InteractableObject {
 	public override void Start()
 	{
 		base.Start();
-		Debug.Log ("0");
+		//Debug.Log ("0");
 	}
 
 	public override void OnInteraction()
 	{
 		base.OnInteraction();
 		MessageSystem system = GameObject.Find("Scene").GetComponent<MessageSystem>();
-		Debug.Log ("1");
+		//Debug.Log ("1");
 		//Получаем индекс записки из названия и выводим сообщение
 		system.AddMessage(text, "Закрыть");
 		if (destroyAfterRead) {
@@ -27,7 +27,7 @@ public class ReadNoteInteraction : InteractableObject {
 
 	// Update is called once per frame
 	public override void OnInteractionFinished() {
-		base.OnInteraction();
+		base.OnInteractionFinished();
 		//Debug.Log("[CandleInteraction] OnInteraction()");
 
 	}

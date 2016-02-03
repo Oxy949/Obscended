@@ -50,8 +50,7 @@ public class PlayerController : MonoBehaviour {
         GameObject closestIntObj = FindClosestIntObj();
         Vector3 intPointPosition = transform.FindChild("InteractionPoint").transform.position;
 
-
-        if (closestIntObj)
+        if (closestIntObj != null && closestIntObj.GetComponent<InteractableObject>() != null)
         {
             if (!isInteracting && Distance2D(intPointPosition - closestIntObj.transform.position) < closestIntObj.GetComponent<InteractableObject>().radius)
             {
