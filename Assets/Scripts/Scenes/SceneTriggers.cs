@@ -12,6 +12,7 @@ public class Condition
 public class SceneTriggers : MonoBehaviour
 {
     public List<Condition> conditions;
+    public bool isCompleated = false;
 
 	// Use this for initialization
 	void Start ()
@@ -29,9 +30,10 @@ public class SceneTriggers : MonoBehaviour
                 allCompleated = false;
         }
 
-        if (allCompleated)
+        if (allCompleated && isCompleated == false)
         {
             LimitedTimeScene scene = GameObject.Find("Scene").GetComponent<LimitedTimeScene>();
+            isCompleated = true;
             scene.onAllConditionsCompleated();
         }
     }
@@ -41,7 +43,10 @@ public class SceneTriggers : MonoBehaviour
         foreach (Condition c in conditions)
         {
             if (c.name == name)
+            {
+                isCompleated = false;
                 c.isCompleated = value;
+            }
         }
     }
 
