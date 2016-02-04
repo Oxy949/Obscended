@@ -1,0 +1,41 @@
+0. „R„„„p„‚„„„€„r„p„‘ „{„€„}„~„p„„„p.
+1. „P„u„‚„u„{„|„„‰„p„„„u„|„Ž. 
+2. „H„p„w„s„y „r„ƒ„u „ƒ„r„u„‰„{„y. 
+3. „L„p„q„y„‚„y„~„„ „ƒ „{„|„„‰„p„}„y. 
+(„t„p„|„Ž„Š„u „y„t„u„„ „„„€, „‰„„„€ „‘ „„‚„y„t„…„}„p„| „~„p „ƒ„€„~„~„…„ „s„€„|„€„r„…) 
+4. „„‚„‘„}„€„…„s„€„|„Ž„~„p„‘ „{„€„}„~„p„„„p, „w„}„p„‡„p„u„} „~„p „{„~„€„„{„… „y „r„y„t„y„} „„…„„„Ž „„€ „{„€„„„€„‚„€„}„… „~„…„w„~„€ „„‚„€„z„„„y, „u„s„€ „„„‚„u„q„…„u„„„ƒ„‘ „x„p„„€„}„~„y„„„Ž („~„p„„€„}„~„, „~„p „r„‚„u„}„‘)
+-------
+0010000
+0010000
+0011110
+2000010
+1100110
+0111100
+1100000
+1000000
+1111000
+0001000
+0001000
+-------
+0 - „Š„y„„ 
+1 - „}„€„w„~„€ „~„p„ƒ„„„…„„p„„„Ž
+2 - „x„p„„y„ƒ„{„p
+
+„B „{„€„~„ˆ„u („y„|„y „~„p „ƒ„u„‚„u„t„y„~„u) „x„p „„„€„q„€„z „~„p„‰„y„u„„ „s„~„p„„„Ž„ƒ„‘ „{„„„€-„„„€ („}„€„w„~„€ „„‚„€„ƒ„„„€ „„„u„~„Ž) „y „„„ „t„€„|„w„u„~ „…„q„u„w„p„„„Ž
+5. „O„~ „x„p „„„€„q„€„z „u„‹„u „s„€„~„y„„„ƒ„‘, „„„u„q„u „~„…„w„~„€ „€„„„„ƒ„{„p„„„Ž „ƒ„{„€„‚„u„u „{„|„„‰ „y „„‚„€„‡„€„t„y„„„Ž „t„p„|„Ž„Š„u. „P„‚„‘„„„p„„„Ž„ƒ„‘ „r „Š„{„p„†„…/„x„p „{„‚„€„r„p„„„Ž„/„„€„„„„„p„„„Ž„ƒ„‘ „u„s„€ „…„q„y„„„Ž „{„…„|„p„{„p„}„y/
+„N„€ „~„y„‰„u„s„€ „~„u „r„„t„u„„, „~„…„w„~„€ „t„r„y„s„p„„„Ž„ƒ„‘ „t„p„|„Ž„Š„u, „€„„„{„‚„„r „t„r„u„‚„Ž „{„|„„‰„€„}. 
+6. „H„p„„u„‚„u„„„Ž „t„r„u„‚„Ž „y „… „„„u„q„‘ „u„ƒ„„„Ž ~120 „ƒ„u„{„…„~„t, „‰„„„€„q„ „…„ƒ„„„‚„€„y„„„Ž „u„}„… „|„€„r„…„Š„{„…. „N„p„„‚„y„}„u„‚ „„p„t„p„u„„ „|„„ƒ„„„‚„p „~„p „s„€„|„€„r„… „y „€„ƒ„„„p„r„|„‘„u„„ „t„„‚„… „r „„€„|„…. „E„ƒ„|„y „r „„„„… „t„„‚„… „„€„ƒ„}„€„„„‚„u„„„Ž, „„„€ „€„~ „„„u„q„‘ „t„€„ƒ„„„p„~„u„„ „‚„…„{„€„z.
+7. „K„€„}„~„p„„„p, „s„t„u „~„y„‰„u„s„€ „~„u „~„…„w„~„€ „€„„„r„|„u„{„p„„„Ž„ƒ„‘, „„‚„€„ƒ„„„€ „y„t„„„y „r„~„y„x. „N„u „‡„€„t„y„„„Ž „r„|„u„r„€ „y „r„„‚„p„r„€ „y „~„u „€„ƒ„„„p„~„p„r„|„y„r„p„„„Ž„ƒ„‘, „‰„„„€„q„ „~„u „„‚„€„y„ƒ„‡„€„t„y„|„€. 
+„N„p „„„u„q„‘ „}„€„s„…„„ „t„p„w„u „|„u„„„u„„„Ž „ƒ„„„‚„u„|„, „~„€ „… „~„y„‡ „~„u „q„…„t„u„„ „{„€„|„|„p„z„t„u„‚„€„r, „p „r„‚„u„}„‘ „}„€„w„u„„ „{„€„~„‰„y„„„Ž„ƒ„‘, „~„€ „~„y „~„p „‰„„„€ „~„u „„€„r„|„y„‘„u„„.
+8. „N„…„w„~„€ „~„p„q„‚„p„„„Ž „{„€„t, „‰„„„€„q„ „„‚„€„z„„„y „t„p„|„Ž„Š„u. „N„p„„‚„y„}„u„‚ 3 „ˆ„y„†„‚„, „p „€„t„~„p „y„x „~„y„‡ - „„„„€ „~„€„}„u„‚ „„„u„{„…„‹„u„z „{„€„}„~„p„„„. „I„s„‚„€„{ „t„€„|„w„u„~ „r„ƒ„„€„}„~„y„„„Ž „u„u. 
+9. „K„€„}„~„p„„„p „r„„w„y„r„p„~„y„‘, „„„u„q„u „~„…„w„~„€ „q„…„t„u„„ „„‚„€„ƒ„„„€ „r„„w„y„„„Ž, „~„p „„„u„q„‘ „q„…„t„…„„ „ƒ„„„p„„„Ž„ƒ„‘ „„‚„u„t„}„u„„„, „q„…„t„u„„ „„€„|„~„u„z„Š„y„z „p„„€„{„p„|„y„„ƒ„y„ƒ, „„€„| „q„…„t„u„„ „„„‚„u„ƒ„{„p„„„Ž„ƒ„‘. 
+„H„p„„y„ƒ„{„y „}„€„s„…„„ „€„„„r„|„u„{„p„„„Ž „„u„‚„ƒ„€„~„p„w„p. „M„€„w„~„€ „y„ƒ„„€„|„Ž„x„€„r„p„„„Ž „„|„u„}„u„~„„„ „…„ƒ„„„‚„p„Š„u„~„y„‘, „{„‚„€„r„Ž, „{„y„Š„{„y, „}„y„Š„{„y („„|„„Š„u„r„„u). 
+10. „T„x„{„p„‘ „y „t„|„y„~„~„p„‘ „{„€„}„~„p„„„p, „~„u „€„ƒ„€„q„€ „ƒ„|„€„w„~„p„‘ („‚„„‰„p„s „y„|„y „{„|„„‰, „„‚„y„t„…„}„p„u„} „‰„„„€). „y „…„w„u „r „{„€„~„ˆ„u... „x„p „„„€„q„€„z „~„p„‰„y„„„p„u„„ „{„„„€-„„„€ „q„u„w„p„„„Ž „ƒ „r„€„„|„‘„}„y:
+"„H„p„{„…„‚„y„„„Ž „~„u „~„p„z„t„u„„„ƒ„‘? „@ „„„€ „…„w„u „D„…„}„‰„y„{„p „~„p„‰„y„~„p„u„„ „€„„„„…„ƒ„{„p„„„Ž..."
+„I „… „„„u„q„‘ „r„„q„€„‚: 
+- „T„q„u„w„p„„„Ž
+- „Q„p„ƒ„ƒ„{„p„x„p„„„Ž „r„ƒ„u „}„p„}„u.
+- „P„„‡„~„…„„„Ž „r„}„u„ƒ„„„u. 
+- „P„‚„€„‰„y„„„p„„„Ž „„€„ƒ„|„u„t„~„y„u „„‚„u„t„|„€„w„u„~„y„u „y „ƒ„{„p„x„p„„„Ž, "„M „N „O „C „@   „A „T „K „B"
+
+  
