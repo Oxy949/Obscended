@@ -6,6 +6,7 @@ public class SceneConditionTrigerObject : InteractableObject {
     public string conditionName = "";
     public bool isTrigger = false;
 	public bool destroyAfterInteraction = true;
+	public bool rotateAfterInteraction = false;
 
     private bool lastState = false;
 
@@ -27,6 +28,9 @@ public class SceneConditionTrigerObject : InteractableObject {
             triggers.SetCondition(conditionName, true);
         }
         
+		if (rotateAfterInteraction) {
+			this.gameObject.transform.Rotate(this.gameObject.transform.rotation.x,this.gameObject.transform.rotation.y,this.gameObject.transform.rotation.z + 180);
+		}
 
         if (destroyAfterInteraction) {
 			this.gameObject.SetActive (false);

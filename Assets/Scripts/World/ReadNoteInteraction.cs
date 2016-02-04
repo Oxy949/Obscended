@@ -6,20 +6,25 @@ public class ReadNoteInteraction : InteractableObject {
 
 	public string text = ""; 
 	public bool destroyAfterRead = true;
+	public string conditionName = "";
+	public string textAfterTrigger = "";
 
 	public override void Start()
 	{
 		base.Start();
-		//Debug.Log ("0");
 	}
 
 	public override void OnInteraction()
 	{
 		base.OnInteraction();
 		MessageSystem system = GameObject.Find("Scene").GetComponent<MessageSystem>();
-		//Debug.Log ("1");
-		//Получаем индекс записки из названия и выводим сообщение
-		system.AddMessage(text, "Закрыть");
+		SceneTriggers triggers = GameObject.Find("Scene").GetComponent<SceneTriggers>();
+
+		if (triggers.isConditionCompleated (conditionName) && conditionName != "")
+			system.AddMessage (textAfterTrigger, "Закрыть");
+		else 
+			system.AddMessage (text, "Закрыть");
+		
 		if (destroyAfterRead) {
 			this.gameObject.SetActive (false);
 		}
