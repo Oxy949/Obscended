@@ -1,12 +1,12 @@
 fileFormatVersion: 2
 guid: 523d3c28cea4e324fba414b98f8752d4
-timeCreated: 1454507138
+timeCreated: 1454594633
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dialog_0
-    21300002: dialog_1
-    21300004: dialog_2
+    21300000: hero_normal
+    21300002: hero_happy
+    21300004: hero_impressed
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -53,7 +53,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: dialog_0
+    - name: hero_normal
       rect:
         serializedVersion: 2
         x: 0
@@ -61,7 +61,7 @@ TextureImporter:
         width: 300
         height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 71, y: 108}
@@ -90,7 +90,7 @@ TextureImporter:
         - {x: -49, y: -102}
         - {x: -49, y: -100}
         - {x: -51, y: -98}
-    - name: dialog_1
+    - name: hero_happy
       rect:
         serializedVersion: 2
         x: 300
@@ -98,7 +98,7 @@ TextureImporter:
         width: 300
         height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 71, y: 108}
@@ -127,7 +127,7 @@ TextureImporter:
         - {x: -49, y: -102}
         - {x: -49, y: -100}
         - {x: -51, y: -98}
-    - name: dialog_2
+    - name: hero_impressed
       rect:
         serializedVersion: 2
         x: 600
@@ -135,7 +135,7 @@ TextureImporter:
         width: 300
         height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 71, y: 108}

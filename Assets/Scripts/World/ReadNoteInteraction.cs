@@ -17,7 +17,7 @@ public class ReadNoteInteraction : InteractableObject {
 	public override void OnInteraction()
 	{
 		base.OnInteraction();
-		MessageSystem system = GameObject.Find("Scene").GetComponent<MessageSystem>();
+		NotesSystem system = GameObject.Find("Scene").GetComponent<NotesSystem>();
 		SceneTriggers triggers = GameObject.Find("Scene").GetComponent<SceneTriggers>();
 
 		if (triggers.isConditionCompleated (conditionName) && conditionName != "")

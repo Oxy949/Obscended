@@ -8,6 +8,11 @@ public class SceneConditionTrigerObject : InteractableObject {
 	public bool destroyAfterInteraction = true;
 	public bool rotateAfterInteraction = false;
 
+    public bool showDialogue = false;
+    public string message = "";
+    public string messageSender = "";
+    public Sprite senderImage;
+
     private bool lastState = false;
 
 	public override void Start()
@@ -35,6 +40,12 @@ public class SceneConditionTrigerObject : InteractableObject {
         if (destroyAfterInteraction) {
 			this.gameObject.SetActive (false);
 		}
+
+        if (showDialogue)
+        {
+            DialogueSystem system = GameObject.Find("Scene").GetComponent<DialogueSystem>();
+            system.AddMessage(message, messageSender, senderImage);
+        }
 	}
 
 	// Update is called once per frame

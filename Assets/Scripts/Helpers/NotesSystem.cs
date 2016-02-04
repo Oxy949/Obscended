@@ -14,10 +14,9 @@ public class MSMessage
     }
 }
 
-public class MessageSystem : MonoBehaviour {
+public class NotesSystem : MonoBehaviour {
 
-    public GameObject noteMessage;
-    public GameObject dialodMessage;
+    public GameObject message;
     private GameObject noteMessageInstantiate;
     private GameObject dialodMessageInstantiate;
     public bool isShowing = false;
@@ -28,7 +27,7 @@ public class MessageSystem : MonoBehaviour {
         //window.SetActive(isShowing);
         list = new List<MSMessage>() { };
 
-        noteMessageInstantiate = Instantiate(noteMessage) as GameObject;
+        noteMessageInstantiate = Instantiate(message) as GameObject;
         noteMessageInstantiate.name = "Canvas-MessageSystem";
 
         if (GameObject.Find("Canvas"))
@@ -47,11 +46,6 @@ public class MessageSystem : MonoBehaviour {
     {
         if (code == "OK")
             HideMessage();
-    }
-
-    public void Test()
-    {
-        AddMessage("Тест модульных диалогов\nПереход на новую строчку.", "OK");
     }
 
     public void AddMessage(string text, string buttontext)

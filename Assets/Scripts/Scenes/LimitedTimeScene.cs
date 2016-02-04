@@ -10,7 +10,7 @@ public class LimitedTimeScene : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("decreaseTimeRemaining", 1.0f, 1.0f);
+        InvokeRepeating("DecreaseTimer", 1.0f, 1.0f);
     }
 
     void Update()
@@ -24,7 +24,7 @@ public class LimitedTimeScene : MonoBehaviour
 
     }
 
-    void decreaseTimeRemaining()
+    void DecreaseTimer()
     {
         timeRemaining--;
     }
@@ -33,7 +33,7 @@ public class LimitedTimeScene : MonoBehaviour
     public virtual void timeElapsed()
     {
         Debug.Log("[LimitedTimeScene] Time elapsed!");
-        MessageSystem system = GameObject.Find("Scene").GetComponent<MessageSystem>();
+        NotesSystem system = GameObject.Find("Scene").GetComponent<NotesSystem>();
         transform.FindChild("TimerSound").GetComponent<AudioSource>().Stop();
         system.AddMessage("Время вышло!", "OK");
         CancelInvoke();

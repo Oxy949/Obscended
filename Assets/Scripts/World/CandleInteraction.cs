@@ -14,8 +14,10 @@ public class CandleInteraction : InteractableObject
     public override void OnInteraction()
     {
         base.OnInteraction();
-        //MessageSystem system = GameObject.Find("Scene").GetComponent<MessageSystem>();
-        //system.AddMessage("Вы использовали переключатель.", "OK");
+        DialogueSystem system = GameObject.Find("Scene").GetComponent<DialogueSystem>();
+        system.AddMessage("Хмм... переключатель.", "ТУТ ИМЯ ПЕРСОНАЖА", Resources.LoadAll<Sprite>("Dialogues/hero")[0]);
+        system.AddMessage("Тут типа начался интерактивный диалог", "ТУТ ЕЩЕ ИМЯ", Resources.LoadAll<Sprite>("Dialogues/hero")[1]);
+        system.AddMessage("Как-то так", "ТУТ ИМЯ ПЕРСОНАЖА", Resources.LoadAll<Sprite>("Dialogues/hero")[2]);
     }
 
     // Update is called once per frame

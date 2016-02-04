@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour {
     private Vector2 currentSpeed;
     
     private Rigidbody2D rigidbody2D;
-    private MessageSystem msystem;
+    private NotesSystem nsystem;
+    private DialogueSystem dsystem;
     private Vector3 lastPosition;
 
     private bool isInteracting = false;
@@ -27,7 +28,8 @@ public class PlayerController : MonoBehaviour {
     {
         animator = GetComponentInChildren<SimpleAnimator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
-        msystem = GameObject.Find("Scene").GetComponent<MessageSystem>();
+        nsystem = GameObject.Find("Scene").GetComponent<NotesSystem>();
+        dsystem = GameObject.Find("Scene").GetComponent<DialogueSystem>();
     }
 
     // Use this for initialization
@@ -40,7 +42,7 @@ public class PlayerController : MonoBehaviour {
         float moveX = CrossPlatformInputManager.GetAxis("Horizontal");
         float moveY = CrossPlatformInputManager.GetAxis("Vertical");
         bool jumpButton = CrossPlatformInputManager.GetButtonUp("Jump");
-        if (msystem.isShowing)
+        if (nsystem.isShowing || dsystem.isShowing)
         {
             moveX = 0;
             moveY = 0;
@@ -104,7 +106,7 @@ public class PlayerController : MonoBehaviour {
 
         animator.isInteracting = isInteracting;
 
-        if (msystem.isShowing)
+        if (nsystem.isShowing || dsystem.isShowing)
         {
             lastPosition = transform.position;
             animator.speed = 0;
@@ -168,7 +170,7 @@ public class PlayerController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (!msystem.isShowing)
+        if (!nsystem.isShowing || !dsystem.isShowing)
         {
             rigidbody2D.MovePosition(rigidbody2D.position + (new Vector2(currentSpeed.x * maxSpeedX, currentSpeed.y * maxSpeedY) * Time.deltaTime));
             lastPosition = transform.position;
