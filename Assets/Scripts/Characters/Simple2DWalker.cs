@@ -11,7 +11,7 @@ public class Simple2DWalker : MonoBehaviour
     private Vector2 currentSpeed;
 
     private Rigidbody2D rigidbody2D;
-    private MessageSystem msystem;
+    private NotesSystem msystem;
     private Vector3 lastPosition;
     private SimpleAnimator animator;
 

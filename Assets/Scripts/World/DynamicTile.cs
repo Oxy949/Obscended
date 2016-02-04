@@ -2,15 +2,15 @@
 using System.Collections;
 
 public class DynamicTile : MonoBehaviour {
-    public int aboveZ = -6;
-    public int belowZ = 0;
+    public float aboveZ = -6;
+    public float belowZ = 0;
     private GameObject player;
-    private int initZ = 0;
+    private float initZ = 0;
 
 	// Use this for initialization
 	void Awake () {
         player = GameObject.FindGameObjectWithTag("Player");
-        initZ = (int)transform.position.z;
+        initZ = transform.position.z;
     }
 	
 	// Update is called once per frame

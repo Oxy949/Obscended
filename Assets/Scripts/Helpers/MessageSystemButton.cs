@@ -1,11 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum MessageSystems { Nsystem, Dsystem };
+
 public class MessageSystemButton : MonoBehaviour {
-    MessageSystem system;
+    public MessageSystems system;
+    NotesSystem nsystem;
+    DialogueSystem dsystem;
     // Use this for initialization
     void Start () {
-        system = GameObject.Find("Scene").GetComponent<MessageSystem>();
+        if (system == MessageSystems.Dsystem)
+            dsystem = GameObject.Find("Scene").GetComponent<DialogueSystem>();
+
+        if (system == MessageSystems.Nsystem)
+            nsystem = GameObject.Find("Scene").GetComponent<NotesSystem>();
     }
 	
 	// Update is called once per frame
@@ -15,6 +23,10 @@ public class MessageSystemButton : MonoBehaviour {
 
     public void SendAction(string actionCode)
     {
-        system.InvokeCode("OK");
+        if (system == MessageSystems.Dsystem)
+            dsystem.InvokeCode("OK");
+
+        if (system == MessageSystems.Nsystem)
+            nsystem.InvokeCode("OK");
     }
 }
