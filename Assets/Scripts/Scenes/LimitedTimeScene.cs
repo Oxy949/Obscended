@@ -8,12 +8,12 @@ public class LimitedTimeScene : MonoBehaviour
     public GameObject remainingTimeText;
     public bool hasElapsed = false;
 
-    void Start()
+    public virtual void Start()
     {
         InvokeRepeating("DecreaseTimer", 1.0f, 1.0f);
     }
 
-    void Update()
+    public virtual void Update()
     {
         if (timeRemaining == 0 && !hasElapsed)
         {
@@ -24,7 +24,7 @@ public class LimitedTimeScene : MonoBehaviour
 
     }
 
-    void DecreaseTimer()
+    public virtual void DecreaseTimer()
     {
         timeRemaining--;
     }
