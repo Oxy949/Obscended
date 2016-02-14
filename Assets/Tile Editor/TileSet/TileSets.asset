@@ -8585,7 +8585,7 @@ MonoBehaviour:
       OrderInLayer: 0
       Tag: Untagged
     - Sprite: {fileID: 21300000, guid: 3b7373c4715b2f54b8e65eeeb27a9fa2, type: 3}
-      Collision: 0
+      Collision: 1
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
       Rotation: 0
