@@ -8030,7 +8030,7 @@ MonoBehaviour:
       Collision: 1
       PhysicsMaterial: {fileID: 0}
       IsTrigger: 0
-      Rotation: 90
+      Rotation: 0
       FlipHorizontally: 0
       FlipVertically: 0
       OrderInLayer: 0
