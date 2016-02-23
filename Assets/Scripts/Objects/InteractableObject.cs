@@ -1,7 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class InteractableObject : MonoBehaviour {
+
+    public delegate void ObjectNearEventHandler(object sender, EventArgs e);
+    public event ObjectNearEventHandler ObjectNear;
+
+    public delegate void InteractionStartedEventHandler(object sender, EventArgs e);
+    public event InteractionStartedEventHandler InteractionStarted;
+
+    public delegate void InteractionFinishedEventHandler(object sender, EventArgs e);
+    public event InteractionFinishedEventHandler InteractionFinished;
+
     public float radius = 1;
     public float interactionTime = 0.1f;
     public bool useFacingDirection = true;
@@ -22,24 +33,30 @@ public class InteractableObject : MonoBehaviour {
 
         if (pc.isInteractingNow() && pc.interactionObj == gameObject && !pc.interactionObjFounded)
         {
-            OnInteraction();
+            OnInteractionStarted();
             pc.interactionObjFounded = true;
         }
     }
 
-    public virtual void OnObjectNear()
+    protected virtual void OnObjectNear()
     {
+        if (ObjectNear != null)
+            ObjectNear(this, null);
         //Debug.Log("[InteractableObject] Can interact with " + transform.name);
     }
 
-    public virtual void OnInteraction()
+    protected virtual void OnInteractionStarted()
     {
-        Debug.Log("[InteractableObject] Interacting with " + transform.name);
+        if (InteractionStarted != null)
+            InteractionStarted(this, null);
+        //Debug.Log("[InteractableObject] Interacting with " + transform.name);
     }
 
     public virtual void OnInteractionFinished()
     {
-        Debug.Log("[InteractableObject] Interacting finished " + transform.name);
+        if (InteractionFinished != null)
+            InteractionFinished(this, null);
+        //Debug.Log("[InteractableObject] Interacting finished " + transform.name);
     }
 
     float Distance2D(Vector3 vec)

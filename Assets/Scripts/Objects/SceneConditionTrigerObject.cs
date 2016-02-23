@@ -20,7 +20,7 @@ public class SceneConditionTrigerObject : InteractableObject {
 		base.Start();
 	}
 
-	public override void OnInteraction()
+	/*public override void OnInteraction()
 	{
 		base.OnInteraction();
         SceneTriggers triggers = GameObject.Find("Scene").GetComponent<SceneTriggers>();
@@ -53,6 +53,6 @@ public class SceneConditionTrigerObject : InteractableObject {
 	{
 		base.OnInteractionFinished();
 
-	}
+	}*/
 
 }

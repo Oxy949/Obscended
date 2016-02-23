@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
 
 public class LeverInteraction : InteractableObject
 {
@@ -13,17 +14,17 @@ public class LeverInteraction : InteractableObject
         base.Start();
         scene = GameObject.Find("Scene").GetComponent<SceneWithLevers>();
         img = GetComponent<SpriteRenderer>();
+        InteractionFinished += LeverInteraction_InteractionFinished;
+    }
+
+    private void LeverInteraction_InteractionFinished(object sender, EventArgs e)
+    {
+        Sprite newSprite = scene.TriggerLever(id);
+        img.sprite = newSprite;
     }
 
     public override void Update ()
     {
         base.Update();
-    }
-
-    public override void OnInteractionFinished()
-    {
-        base.OnInteractionFinished();
-        Sprite newSprite = scene.TriggerLever(id);
-        img.sprite = newSprite;
     }
 }

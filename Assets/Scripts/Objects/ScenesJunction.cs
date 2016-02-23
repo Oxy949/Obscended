@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class ScenesJunction : InteractableObject
 {
@@ -8,11 +9,17 @@ public class ScenesJunction : InteractableObject
 
     private void Awake()
     {
-        loader = GameObject.Find("Scene").GetComponent<SceneLoader>();
+        loader = GameObject.FindGameObjectWithTag("Scene").GetComponent<SceneLoader>();
+        ObjectNear += ScenesJunction_ObjectNear;
     }
 
-    public override void OnObjectNear()
+    private void ScenesJunction_ObjectNear(object sender, EventArgs e)
     {
         loader.LoadScene(sceneName);
     }
+
+    /*public override void OnObjectNear()
+    {
+        loader.LoadScene(sceneName);
+    }*/
 }

@@ -28,8 +28,8 @@ public class PlayerController : MonoBehaviour {
     {
         animator = GetComponentInChildren<SimpleAnimator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
-        nsystem = GameObject.Find("Scene").GetComponent<NotesSystem>();
-        dsystem = GameObject.Find("Scene").GetComponent<DialogueSystem>();
+        nsystem = GameObject.FindGameObjectWithTag("Scene").GetComponent<NotesSystem>();
+        dsystem = GameObject.FindGameObjectWithTag("Scene").GetComponent<DialogueSystem>();
     }
 
     // Use this for initialization
