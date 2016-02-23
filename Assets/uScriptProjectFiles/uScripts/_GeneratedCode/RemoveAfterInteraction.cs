@@ -25,6 +25,7 @@ public class RemoveAfterInteraction : uScriptLogic
    //external parameters
    
    //local nodes
+   public UnityEngine.Sprite D1Sprite = default(UnityEngine.Sprite);
    UnityEngine.GameObject local_Scene_UnityEngine_GameObject = default(UnityEngine.GameObject);
    UnityEngine.GameObject local_Scene_UnityEngine_GameObject_previous = null;
    
@@ -54,6 +55,11 @@ public class RemoveAfterInteraction : uScriptLogic
    System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_buttontext_1 = "lol";
    System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_tag_2 = "Scene";
    UnityEngine.GameObject method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_Return_2 = default(UnityEngine.GameObject);
+   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_8 = "dsffdsf";
+   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_buttontext_8 = "sdfdsfsdfsdfsdf";
+   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_9 = "sdfsdfsdf";
+   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderName_9 = "dsfsdfsdfdsf";
+   UnityEngine.Sprite method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderImage_9 = default(UnityEngine.Sprite);
    #pragma warning restore 414
    
    //functions to refresh properties from entities
@@ -293,7 +299,7 @@ public class RemoveAfterInteraction : uScriptLogic
                component.AddMessage(method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_1, method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_buttontext_1);
             }
          }
-         Relay_In_7();
+         Relay_AddMessage_8();
       }
       else
       {
@@ -399,10 +405,70 @@ public class RemoveAfterInteraction : uScriptLogic
       }
    }
    
+   void Relay_AddMessage_8()
+   {
+      if ( relayCallCount++ < MaxRelayCallCount )
+      {
+         if (true == CheckDebugBreak("e288dcce-6df4-445d-9867-437560c4d9c6", "NotesSystem", Relay_AddMessage_8)) return; 
+         {
+            {
+            }
+            {
+            }
+         }
+         {
+            NotesSystem component;
+            component = local_Scene_UnityEngine_GameObject.GetComponent<NotesSystem>();
+            if ( null != component )
+            {
+               component.AddMessage(method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_8, method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_buttontext_8);
+            }
+         }
+         Relay_AddMessage_9();
+      }
+      else
+      {
+         uScriptDebug.Log( "Possible infinite loop detected in uScript RemoveAfterInteraction.uscript at NotesSystem.  If this is in error you can change the Maximum Node Recursion in the Preferences Panel and regenerate the script.", uScriptDebug.Type.Error);
+      }
+   }
+   
+   void Relay_AddMessage_9()
+   {
+      if ( relayCallCount++ < MaxRelayCallCount )
+      {
+         if (true == CheckDebugBreak("9a034d62-1793-4543-8c9b-666341bc30bf", "DialogueSystem", Relay_AddMessage_9)) return; 
+         {
+            {
+            }
+            {
+            }
+            {
+               method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderImage_9 = D1Sprite;
+               
+            }
+         }
+         {
+            DialogueSystem component;
+            component = local_Scene_UnityEngine_GameObject.GetComponent<DialogueSystem>();
+            if ( null != component )
+            {
+               component.AddMessage(method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_9, method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderName_9, method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderImage_9);
+            }
+         }
+         Relay_In_7();
+      }
+      else
+      {
+         uScriptDebug.Log( "Possible infinite loop detected in uScript RemoveAfterInteraction.uscript at DialogueSystem.  If this is in error you can change the Maximum Node Recursion in the Preferences Panel and regenerate the script.", uScriptDebug.Type.Error);
+      }
+   }
+   
    private void UpdateEditorValues( )
    {
       uScript_MasterComponent.LatestMasterComponent.UpdateNodeValue( "RemoveAfterInteraction.uscript:Scene", local_Scene_UnityEngine_GameObject);
       uScript_MasterComponent.LatestMasterComponent.UpdateNodeValue( "73dd65ad-227d-4186-a9f8-bb6a03f24824", local_Scene_UnityEngine_GameObject);
+      uScript_MasterComponent.LatestMasterComponent.UpdateNodeValue( "RemoveAfterInteraction.uscript:D1Sprite", D1Sprite);
+      uScript_MasterComponent.LatestMasterComponent.UpdateNodeValue( "9353c686-664d-4ffa-8f6c-e2cd15c21196", D1Sprite);
    }
    bool CheckDebugBreak(string guid, string name, ContinueExecution method)
    {

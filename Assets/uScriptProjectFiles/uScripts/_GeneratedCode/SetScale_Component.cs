@@ -5,14 +5,13 @@ using System.Collections.Generic;
 
 // This is the component script that you should assign to GameObjects to use this graph on them. Use the uScript/Graphs section of Unity's "Component" menu to assign this graph to a selected GameObject.
 
-[AddComponentMenu("uScript/Graphs/RemoveAfterInteraction")]
-public class RemoveAfterInteraction_Component : uScriptCode
+[AddComponentMenu("uScript/Graphs/SetScale")]
+public class SetScale_Component : uScriptCode
 {
    #pragma warning disable 414
-   public RemoveAfterInteraction ExposedVariables = new RemoveAfterInteraction( ); 
+   public SetScale ExposedVariables = new SetScale( ); 
    #pragma warning restore 414
    
-   public UnityEngine.Sprite D1Sprite { get { return ExposedVariables.D1Sprite; } set { ExposedVariables.D1Sprite = value; } } 
    
    void Awake( )
    {
