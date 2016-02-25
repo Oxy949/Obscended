@@ -254,8 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9aebedecdd5e4da3b1e28e2e6268e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aboveZ: 2
-  belowZ: 3
+  heroLayerName: Hero
 --- !u!4 &22814765 stripped
 Transform:
   m_PrefabParentObject: {fileID: 499440, guid: b0a2068a1d682f1438f530b9be943a86, type: 2}
@@ -3765,8 +3764,8 @@ GameObject:
   - 114: {fileID: 374995541}
   - 114: {fileID: 374995543}
   m_Layer: 5
-  m_Name: Scene
-  m_TagString: Untagged
+  m_Name: _Room0Scene
+  m_TagString: Scene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8079,8 +8078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9aebedecdd5e4da3b1e28e2e6268e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aboveZ: 0
-  belowZ: 2
+  heroLayerName: Hero
 --- !u!1 &623047790
 GameObject:
   m_ObjectHideFlags: 0
@@ -10399,8 +10397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9aebedecdd5e4da3b1e28e2e6268e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aboveZ: 0
-  belowZ: 2
+  heroLayerName: Hero
 --- !u!1 &704815873
 GameObject:
   m_ObjectHideFlags: 0
@@ -15214,8 +15211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9aebedecdd5e4da3b1e28e2e6268e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aboveZ: 2
-  belowZ: 3
+  heroLayerName: Hero
 --- !u!1 &997142035
 GameObject:
   m_ObjectHideFlags: 0
@@ -22819,8 +22815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9aebedecdd5e4da3b1e28e2e6268e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aboveZ: 0
-  belowZ: 2
+  heroLayerName: Hero
 --- !u!1 &1404300910
 GameObject:
   m_ObjectHideFlags: 0
@@ -23734,8 +23729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9aebedecdd5e4da3b1e28e2e6268e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aboveZ: 1
-  belowZ: 2
+  heroLayerName: Hero
 --- !u!114 &1468767282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26448,8 +26442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9aebedecdd5e4da3b1e28e2e6268e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aboveZ: -6
-  belowZ: 0
+  heroLayerName: Hero
 --- !u!114 &1648117284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27449,8 +27442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9aebedecdd5e4da3b1e28e2e6268e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aboveZ: -6
-  belowZ: 0
+  heroLayerName: Hero
 --- !u!114 &1740877791
 MonoBehaviour:
   m_ObjectHideFlags: 0

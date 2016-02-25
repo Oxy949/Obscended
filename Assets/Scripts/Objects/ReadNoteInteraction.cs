@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class ReadNoteInteraction : InteractableObject {
 
@@ -14,12 +15,12 @@ public class ReadNoteInteraction : InteractableObject {
 	public override void Start()
 	{
 		base.Start();
+        InteractionStarted += ReadNoteInteraction_InteractionStarted;
 	}
 
-	public override void OnInteraction()
-	{
-		base.OnInteraction();
-		NotesSystem system = GameObject.Find("Scene").GetComponent<NotesSystem>();
+    private void ReadNoteInteraction_InteractionStarted(object sender, EventArgs e)
+    {
+        NotesSystem system = GameObject.Find("Scene").GetComponent<NotesSystem>();
         if (useTrigger)
         {
             SceneTriggers triggers = GameObject.Find("Scene").GetComponent<SceneTriggers>();
@@ -32,16 +33,9 @@ public class ReadNoteInteraction : InteractableObject {
         else
             system.AddMessage(text, "Закрыть");
 
-        if (destroyAfterRead) {
-			this.gameObject.SetActive (false);
-		}
-	}
-
-	// Update is called once per frame
-	public override void OnInteractionFinished() {
-		base.OnInteractionFinished();
-		//Debug.Log("[CandleInteraction] OnInteraction()");
-
-	}
-
+        if (destroyAfterRead)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
 }

@@ -10,10 +10,10 @@ public class MessageSystemButton : MonoBehaviour {
     // Use this for initialization
     void Start () {
         if (system == MessageSystems.Dsystem)
-            dsystem = GameObject.Find("Scene").GetComponent<DialogueSystem>();
+            dsystem = GameObject.FindGameObjectWithTag("Scene").GetComponent<DialogueSystem>();
 
         if (system == MessageSystems.Nsystem)
-            nsystem = GameObject.Find("Scene").GetComponent<NotesSystem>();
+            nsystem = GameObject.FindGameObjectWithTag("Scene").GetComponent<NotesSystem>();
     }
 	
 	// Update is called once per frame

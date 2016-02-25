@@ -6,6 +6,8 @@ TagManager:
   tags:
   - InteractableObject
   - Fire
+  - onlyTrigger
+  - Scene
   layers:
   - Default
   - TransparentFX
@@ -40,6 +42,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back
+    uniqueID: 694622139
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Hero
+    uniqueID: 200929013
+    locked: 0
+  - name: Top
+    uniqueID: 3415792421
     locked: 0
