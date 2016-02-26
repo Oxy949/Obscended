@@ -12,7 +12,6 @@ public class RemoveAfterInteraction_Component : uScriptCode
    public RemoveAfterInteraction ExposedVariables = new RemoveAfterInteraction( ); 
    #pragma warning restore 414
    
-   public UnityEngine.Sprite D1Sprite { get { return ExposedVariables.D1Sprite; } set { ExposedVariables.D1Sprite = value; } } 
    
    void Awake( )
    {

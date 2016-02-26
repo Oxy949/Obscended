@@ -25,7 +25,7 @@ public class RemoveAfterInteraction : uScriptLogic
    //external parameters
    
    //local nodes
-   public UnityEngine.Sprite D1Sprite = default(UnityEngine.Sprite);
+   UnityEngine.Sprite local_HeroHappySprite_UnityEngine_Sprite = default(UnityEngine.Sprite);
    UnityEngine.GameObject local_Scene_UnityEngine_GameObject = default(UnityEngine.GameObject);
    UnityEngine.GameObject local_Scene_UnityEngine_GameObject_previous = null;
    
@@ -34,32 +34,35 @@ public class RemoveAfterInteraction : uScriptLogic
    
    //logic nodes
    //pointer to script instanced logic node
-   uScriptAct_OnInputEventFilter logic_uScriptAct_OnInputEventFilter_uScriptAct_OnInputEventFilter_5 = new uScriptAct_OnInputEventFilter( );
-   UnityEngine.KeyCode logic_uScriptAct_OnInputEventFilter_KeyCode_5 = UnityEngine.KeyCode.A;
-   bool logic_uScriptAct_OnInputEventFilter_KeyDown_5 = true;
-   bool logic_uScriptAct_OnInputEventFilter_KeyHeld_5 = true;
-   bool logic_uScriptAct_OnInputEventFilter_KeyUp_5 = true;
+   uScriptAct_OnInputEventFilter logic_uScriptAct_OnInputEventFilter_uScriptAct_OnInputEventFilter_4 = new uScriptAct_OnInputEventFilter( );
+   UnityEngine.KeyCode logic_uScriptAct_OnInputEventFilter_KeyCode_4 = UnityEngine.KeyCode.A;
+   bool logic_uScriptAct_OnInputEventFilter_KeyDown_4 = true;
+   bool logic_uScriptAct_OnInputEventFilter_KeyHeld_4 = true;
+   bool logic_uScriptAct_OnInputEventFilter_KeyUp_4 = true;
    //pointer to script instanced logic node
-   uScriptAct_SetActive logic_uScriptAct_SetActive_uScriptAct_SetActive_7 = new uScriptAct_SetActive( );
-   UnityEngine.GameObject logic_uScriptAct_SetActive_Target_7 = default(UnityEngine.GameObject);
-   System.Boolean logic_uScriptAct_SetActive_IsActive_7 = (bool) false;
-   bool logic_uScriptAct_SetActive_Out_7 = true;
+   uScriptAct_SetActive logic_uScriptAct_SetActive_uScriptAct_SetActive_6 = new uScriptAct_SetActive( );
+   UnityEngine.GameObject logic_uScriptAct_SetActive_Target_6 = default(UnityEngine.GameObject);
+   System.Boolean logic_uScriptAct_SetActive_IsActive_6 = (bool) false;
+   bool logic_uScriptAct_SetActive_Out_6 = true;
+   //pointer to script instanced logic node
+   uScriptAct_LoadSprite logic_uScriptAct_LoadSprite_uScriptAct_LoadSprite_9 = new uScriptAct_LoadSprite( );
+   System.String logic_uScriptAct_LoadSprite_name_9 = "Gfx/Hero/dialogue";
+   System.Boolean logic_uScriptAct_LoadSprite_isMultiple_9 = (bool) true;
+   System.Int32 logic_uScriptAct_LoadSprite_multipleIndex_9 = (int) 0;
+   UnityEngine.Sprite logic_uScriptAct_LoadSprite_textureFile_9;
+   bool logic_uScriptAct_LoadSprite_Out_9 = true;
    
    //event nodes
-   UnityEngine.GameObject event_UnityEngine_GameObject_Instance_4 = default(UnityEngine.GameObject);
+   UnityEngine.GameObject event_UnityEngine_GameObject_Instance_3 = default(UnityEngine.GameObject);
    
    //property nodes
    
    //method nodes
-   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_1 = "Lal";
-   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_buttontext_1 = "lol";
-   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_tag_2 = "Scene";
-   UnityEngine.GameObject method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_Return_2 = default(UnityEngine.GameObject);
-   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_8 = "dsffdsf";
-   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_buttontext_8 = "sdfdsfsdfsdfsdf";
-   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_9 = "sdfsdfsdf";
-   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderName_9 = "dsfsdfsdfdsf";
-   UnityEngine.Sprite method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderImage_9 = default(UnityEngine.Sprite);
+   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_tag_1 = "Scene";
+   UnityEngine.GameObject method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_Return_1 = default(UnityEngine.GameObject);
+   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_7 = "выавыа а ыва ыва ыва ывавы а ыв аыв аыв авы авы аы ва ыв аыв авыаываыва ыв аыв авыа ыва ывавыа выаыв аы ва ыв а  выаываываыва выаыва ываыв ава ыв аа ыв аыв ";
+   System.String method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderName_7 = "Главный Герой";
+   UnityEngine.Sprite method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderImage_7 = default(UnityEngine.Sprite);
    #pragma warning restore 414
    
    //functions to refresh properties from entities
@@ -85,9 +88,9 @@ public class RemoveAfterInteraction : uScriptLogic
                InteractableObject component = owner_Connection_0.GetComponent<InteractableObject>();
                if ( null != component )
                {
-                  component.ObjectNear += Instance_ObjectNear_6;
-                  component.InteractionStarted += Instance_InteractionStarted_6;
-                  component.InteractionFinished += Instance_InteractionFinished_6;
+                  component.ObjectNear += Instance_ObjectNear_5;
+                  component.InteractionStarted += Instance_InteractionStarted_5;
+                  component.InteractionFinished += Instance_InteractionFinished_5;
                }
             }
          }
@@ -117,9 +120,9 @@ public class RemoveAfterInteraction : uScriptLogic
                InteractableObject component = owner_Connection_0.GetComponent<InteractableObject>();
                if ( null != component )
                {
-                  component.ObjectNear += Instance_ObjectNear_6;
-                  component.InteractionStarted += Instance_InteractionStarted_6;
-                  component.InteractionFinished += Instance_InteractionFinished_6;
+                  component.ObjectNear += Instance_ObjectNear_5;
+                  component.InteractionStarted += Instance_InteractionStarted_5;
+                  component.InteractionFinished += Instance_InteractionFinished_5;
                }
             }
          }
@@ -128,20 +131,20 @@ public class RemoveAfterInteraction : uScriptLogic
    
    void SyncEventListeners( )
    {
-      if ( null == event_UnityEngine_GameObject_Instance_4 || false == m_RegisteredForEvents )
+      if ( null == event_UnityEngine_GameObject_Instance_3 || false == m_RegisteredForEvents )
       {
-         event_UnityEngine_GameObject_Instance_4 = uScript_MasterComponent.LatestMaster;
-         if ( null != event_UnityEngine_GameObject_Instance_4 )
+         event_UnityEngine_GameObject_Instance_3 = uScript_MasterComponent.LatestMaster;
+         if ( null != event_UnityEngine_GameObject_Instance_3 )
          {
             {
-               uScript_Input component = event_UnityEngine_GameObject_Instance_4.GetComponent<uScript_Input>();
+               uScript_Input component = event_UnityEngine_GameObject_Instance_3.GetComponent<uScript_Input>();
                if ( null == component )
                {
-                  component = event_UnityEngine_GameObject_Instance_4.AddComponent<uScript_Input>();
+                  component = event_UnityEngine_GameObject_Instance_3.AddComponent<uScript_Input>();
                }
                if ( null != component )
                {
-                  component.KeyEvent += Instance_KeyEvent_4;
+                  component.KeyEvent += Instance_KeyEvent_3;
                }
             }
          }
@@ -156,19 +159,19 @@ public class RemoveAfterInteraction : uScriptLogic
             InteractableObject component = owner_Connection_0.GetComponent<InteractableObject>();
             if ( null != component )
             {
-               component.ObjectNear -= Instance_ObjectNear_6;
-               component.InteractionStarted -= Instance_InteractionStarted_6;
-               component.InteractionFinished -= Instance_InteractionFinished_6;
+               component.ObjectNear -= Instance_ObjectNear_5;
+               component.InteractionStarted -= Instance_InteractionStarted_5;
+               component.InteractionFinished -= Instance_InteractionFinished_5;
             }
          }
       }
-      if ( null != event_UnityEngine_GameObject_Instance_4 )
+      if ( null != event_UnityEngine_GameObject_Instance_3 )
       {
          {
-            uScript_Input component = event_UnityEngine_GameObject_Instance_4.GetComponent<uScript_Input>();
+            uScript_Input component = event_UnityEngine_GameObject_Instance_3.GetComponent<uScript_Input>();
             if ( null != component )
             {
-               component.KeyEvent -= Instance_KeyEvent_4;
+               component.KeyEvent -= Instance_KeyEvent_3;
             }
          }
       }
@@ -178,8 +181,9 @@ public class RemoveAfterInteraction : uScriptLogic
    {
       parentGameObject = g;
       
-      logic_uScriptAct_OnInputEventFilter_uScriptAct_OnInputEventFilter_5.SetParent(g);
-      logic_uScriptAct_SetActive_uScriptAct_SetActive_7.SetParent(g);
+      logic_uScriptAct_OnInputEventFilter_uScriptAct_OnInputEventFilter_4.SetParent(g);
+      logic_uScriptAct_SetActive_uScriptAct_SetActive_6.SetParent(g);
+      logic_uScriptAct_LoadSprite_uScriptAct_LoadSprite_9.SetParent(g);
       owner_Connection_0 = parentGameObject;
    }
    public void Awake()
@@ -232,7 +236,7 @@ public class RemoveAfterInteraction : uScriptLogic
    {
    }
    
-   void Instance_KeyEvent_4(object o, System.EventArgs e)
+   void Instance_KeyEvent_3(object o, System.EventArgs e)
    {
       //reset event call
       //if it ever goes above MaxRelayCallCount before being reset
@@ -241,10 +245,10 @@ public class RemoveAfterInteraction : uScriptLogic
       
       //fill globals
       //relay event to nodes
-      Relay_KeyEvent_4( );
+      Relay_KeyEvent_3( );
    }
    
-   void Instance_ObjectNear_6(object o, System.EventArgs e)
+   void Instance_ObjectNear_5(object o, System.EventArgs e)
    {
       //reset event call
       //if it ever goes above MaxRelayCallCount before being reset
@@ -253,10 +257,10 @@ public class RemoveAfterInteraction : uScriptLogic
       
       //fill globals
       //relay event to nodes
-      Relay_ObjectNear_6( );
+      Relay_ObjectNear_5( );
    }
    
-   void Instance_InteractionStarted_6(object o, System.EventArgs e)
+   void Instance_InteractionStarted_5(object o, System.EventArgs e)
    {
       //reset event call
       //if it ever goes above MaxRelayCallCount before being reset
@@ -265,10 +269,10 @@ public class RemoveAfterInteraction : uScriptLogic
       
       //fill globals
       //relay event to nodes
-      Relay_InteractionStarted_6( );
+      Relay_InteractionStarted_5( );
    }
    
-   void Instance_InteractionFinished_6(object o, System.EventArgs e)
+   void Instance_InteractionFinished_5(object o, System.EventArgs e)
    {
       //reset event call
       //if it ever goes above MaxRelayCallCount before being reset
@@ -277,49 +281,22 @@ public class RemoveAfterInteraction : uScriptLogic
       
       //fill globals
       //relay event to nodes
-      Relay_InteractionFinished_6( );
+      Relay_InteractionFinished_5( );
    }
    
-   void Relay_AddMessage_1()
+   void Relay_FindGameObjectWithTag_1()
    {
       if ( relayCallCount++ < MaxRelayCallCount )
       {
-         if (true == CheckDebugBreak("3b0cc47c-b906-4dc1-b662-b5c88d2200bb", "NotesSystem", Relay_AddMessage_1)) return; 
+         if (true == CheckDebugBreak("a3a78b9f-2c6c-47b1-adf8-ea93cc66c673", "UnityEngine_GameObject", Relay_FindGameObjectWithTag_1)) return; 
          {
             {
             }
             {
             }
          }
-         {
-            NotesSystem component;
-            component = local_Scene_UnityEngine_GameObject.GetComponent<NotesSystem>();
-            if ( null != component )
-            {
-               component.AddMessage(method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_1, method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_buttontext_1);
-            }
-         }
-         Relay_AddMessage_8();
-      }
-      else
-      {
-         uScriptDebug.Log( "Possible infinite loop detected in uScript RemoveAfterInteraction.uscript at NotesSystem.  If this is in error you can change the Maximum Node Recursion in the Preferences Panel and regenerate the script.", uScriptDebug.Type.Error);
-      }
-   }
-   
-   void Relay_FindGameObjectWithTag_2()
-   {
-      if ( relayCallCount++ < MaxRelayCallCount )
-      {
-         if (true == CheckDebugBreak("a3a78b9f-2c6c-47b1-adf8-ea93cc66c673", "UnityEngine_GameObject", Relay_FindGameObjectWithTag_2)) return; 
-         {
-            {
-            }
-            {
-            }
-         }
-         method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_Return_2 = UnityEngine.GameObject.FindGameObjectWithTag(method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_tag_2);
-         local_Scene_UnityEngine_GameObject = method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_Return_2;
+         method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_Return_1 = UnityEngine.GameObject.FindGameObjectWithTag(method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_tag_1);
+         local_Scene_UnityEngine_GameObject = method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_Return_1;
          {
             //if our game object reference was changed then we need to reset event listeners
             if ( local_Scene_UnityEngine_GameObject_previous != local_Scene_UnityEngine_GameObject || false == m_RegisteredForEvents )
@@ -331,7 +308,7 @@ public class RemoveAfterInteraction : uScriptLogic
                //setup new listeners
             }
          }
-         Relay_AddMessage_1();
+         Relay_In_9();
       }
       else
       {
@@ -339,22 +316,22 @@ public class RemoveAfterInteraction : uScriptLogic
       }
    }
    
-   void Relay_KeyEvent_4()
+   void Relay_KeyEvent_3()
    {
-      if (true == CheckDebugBreak("a249b081-58db-4994-b979-04a28d2108cf", "Input_Events", Relay_KeyEvent_4)) return; 
-      Relay_In_5();
+      if (true == CheckDebugBreak("a249b081-58db-4994-b979-04a28d2108cf", "Input_Events", Relay_KeyEvent_3)) return; 
+      Relay_In_4();
    }
    
-   void Relay_In_5()
+   void Relay_In_4()
    {
       if ( relayCallCount++ < MaxRelayCallCount )
       {
-         if (true == CheckDebugBreak("b624bbb9-c71b-409e-b8e6-5c8a2ac4aac8", "Input_Events_Filter", Relay_In_5)) return; 
+         if (true == CheckDebugBreak("b624bbb9-c71b-409e-b8e6-5c8a2ac4aac8", "Input_Events_Filter", Relay_In_4)) return; 
          {
             {
             }
          }
-         logic_uScriptAct_OnInputEventFilter_uScriptAct_OnInputEventFilter_5.In(logic_uScriptAct_OnInputEventFilter_KeyCode_5);
+         logic_uScriptAct_OnInputEventFilter_uScriptAct_OnInputEventFilter_4.In(logic_uScriptAct_OnInputEventFilter_KeyCode_4);
          
          //save off values because, if there are multiple, our relay logic could cause them to change before the next value is tested
          
@@ -365,36 +342,36 @@ public class RemoveAfterInteraction : uScriptLogic
       }
    }
    
-   void Relay_ObjectNear_6()
+   void Relay_ObjectNear_5()
    {
-      if (true == CheckDebugBreak("ae6078ff-ddc7-4260-9346-1dc75b76f1f9", "InteractableObject", Relay_ObjectNear_6)) return; 
+      if (true == CheckDebugBreak("ae6078ff-ddc7-4260-9346-1dc75b76f1f9", "InteractableObject", Relay_ObjectNear_5)) return; 
    }
    
-   void Relay_InteractionStarted_6()
+   void Relay_InteractionStarted_5()
    {
-      if (true == CheckDebugBreak("ae6078ff-ddc7-4260-9346-1dc75b76f1f9", "InteractableObject", Relay_InteractionStarted_6)) return; 
+      if (true == CheckDebugBreak("ae6078ff-ddc7-4260-9346-1dc75b76f1f9", "InteractableObject", Relay_InteractionStarted_5)) return; 
    }
    
-   void Relay_InteractionFinished_6()
+   void Relay_InteractionFinished_5()
    {
-      if (true == CheckDebugBreak("ae6078ff-ddc7-4260-9346-1dc75b76f1f9", "InteractableObject", Relay_InteractionFinished_6)) return; 
-      Relay_FindGameObjectWithTag_2();
+      if (true == CheckDebugBreak("ae6078ff-ddc7-4260-9346-1dc75b76f1f9", "InteractableObject", Relay_InteractionFinished_5)) return; 
+      Relay_FindGameObjectWithTag_1();
    }
    
-   void Relay_In_7()
+   void Relay_In_6()
    {
       if ( relayCallCount++ < MaxRelayCallCount )
       {
-         if (true == CheckDebugBreak("e63a89f1-e340-4b2b-b7f1-688399a8d690", "Set_Active", Relay_In_7)) return; 
+         if (true == CheckDebugBreak("e63a89f1-e340-4b2b-b7f1-688399a8d690", "Set_Active", Relay_In_6)) return; 
          {
             {
-               logic_uScriptAct_SetActive_Target_7 = owner_Connection_0;
+               logic_uScriptAct_SetActive_Target_6 = owner_Connection_0;
                
             }
             {
             }
          }
-         logic_uScriptAct_SetActive_uScriptAct_SetActive_7.In(logic_uScriptAct_SetActive_Target_7, logic_uScriptAct_SetActive_IsActive_7);
+         logic_uScriptAct_SetActive_uScriptAct_SetActive_6.In(logic_uScriptAct_SetActive_Target_6, logic_uScriptAct_SetActive_IsActive_6);
          
          //save off values because, if there are multiple, our relay logic could cause them to change before the next value is tested
          
@@ -405,45 +382,18 @@ public class RemoveAfterInteraction : uScriptLogic
       }
    }
    
-   void Relay_AddMessage_8()
+   void Relay_AddMessage_7()
    {
       if ( relayCallCount++ < MaxRelayCallCount )
       {
-         if (true == CheckDebugBreak("e288dcce-6df4-445d-9867-437560c4d9c6", "NotesSystem", Relay_AddMessage_8)) return; 
-         {
-            {
-            }
-            {
-            }
-         }
-         {
-            NotesSystem component;
-            component = local_Scene_UnityEngine_GameObject.GetComponent<NotesSystem>();
-            if ( null != component )
-            {
-               component.AddMessage(method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_8, method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_buttontext_8);
-            }
-         }
-         Relay_AddMessage_9();
-      }
-      else
-      {
-         uScriptDebug.Log( "Possible infinite loop detected in uScript RemoveAfterInteraction.uscript at NotesSystem.  If this is in error you can change the Maximum Node Recursion in the Preferences Panel and regenerate the script.", uScriptDebug.Type.Error);
-      }
-   }
-   
-   void Relay_AddMessage_9()
-   {
-      if ( relayCallCount++ < MaxRelayCallCount )
-      {
-         if (true == CheckDebugBreak("9a034d62-1793-4543-8c9b-666341bc30bf", "DialogueSystem", Relay_AddMessage_9)) return; 
+         if (true == CheckDebugBreak("9a034d62-1793-4543-8c9b-666341bc30bf", "DialogueSystem", Relay_AddMessage_7)) return; 
          {
             {
             }
             {
             }
             {
-               method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderImage_9 = D1Sprite;
+               method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderImage_7 = local_HeroHappySprite_UnityEngine_Sprite;
                
             }
          }
@@ -452,10 +402,10 @@ public class RemoveAfterInteraction : uScriptLogic
             component = local_Scene_UnityEngine_GameObject.GetComponent<DialogueSystem>();
             if ( null != component )
             {
-               component.AddMessage(method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_9, method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderName_9, method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderImage_9);
+               component.AddMessage(method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_text_7, method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderName_7, method_Detox_ScriptEditor_Plug_UnityEngine_GameObject_senderImage_7);
             }
          }
-         Relay_In_7();
+         Relay_In_6();
       }
       else
       {
@@ -463,12 +413,44 @@ public class RemoveAfterInteraction : uScriptLogic
       }
    }
    
+   void Relay_In_9()
+   {
+      if ( relayCallCount++ < MaxRelayCallCount )
+      {
+         if (true == CheckDebugBreak("551b1880-d84b-4f29-b84c-7d0eea8de286", "Load_Sprite", Relay_In_9)) return; 
+         {
+            {
+            }
+            {
+            }
+            {
+            }
+            {
+            }
+         }
+         logic_uScriptAct_LoadSprite_uScriptAct_LoadSprite_9.In(logic_uScriptAct_LoadSprite_name_9, logic_uScriptAct_LoadSprite_isMultiple_9, logic_uScriptAct_LoadSprite_multipleIndex_9, out logic_uScriptAct_LoadSprite_textureFile_9);
+         local_HeroHappySprite_UnityEngine_Sprite = logic_uScriptAct_LoadSprite_textureFile_9;
+         
+         //save off values because, if there are multiple, our relay logic could cause them to change before the next value is tested
+         bool test_0 = logic_uScriptAct_LoadSprite_uScriptAct_LoadSprite_9.Out;
+         
+         if ( test_0 == true )
+         {
+            Relay_AddMessage_7();
+         }
+      }
+      else
+      {
+         uScriptDebug.Log( "Possible infinite loop detected in uScript RemoveAfterInteraction.uscript at Load Sprite.  If this is in error you can change the Maximum Node Recursion in the Preferences Panel and regenerate the script.", uScriptDebug.Type.Error);
+      }
+   }
+   
    private void UpdateEditorValues( )
    {
       uScript_MasterComponent.LatestMasterComponent.UpdateNodeValue( "RemoveAfterInteraction.uscript:Scene", local_Scene_UnityEngine_GameObject);
       uScript_MasterComponent.LatestMasterComponent.UpdateNodeValue( "73dd65ad-227d-4186-a9f8-bb6a03f24824", local_Scene_UnityEngine_GameObject);
-      uScript_MasterComponent.LatestMasterComponent.UpdateNodeValue( "RemoveAfterInteraction.uscript:D1Sprite", D1Sprite);
-      uScript_MasterComponent.LatestMasterComponent.UpdateNodeValue( "9353c686-664d-4ffa-8f6c-e2cd15c21196", D1Sprite);
+      uScript_MasterComponent.LatestMasterComponent.UpdateNodeValue( "RemoveAfterInteraction.uscript:HeroHappySprite", local_HeroHappySprite_UnityEngine_Sprite);
+      uScript_MasterComponent.LatestMasterComponent.UpdateNodeValue( "9353c686-664d-4ffa-8f6c-e2cd15c21196", local_HeroHappySprite_UnityEngine_Sprite);
    }
    bool CheckDebugBreak(string guid, string name, ContinueExecution method)
    {
