@@ -20,11 +20,20 @@ public class uScriptAct_LoadSprite : uScriptLogic
       [FriendlyName("Asset Path", "The Sprite file to load.  The supported file formats are: \"psd\", \"tiff\", \"jpg\", \"tga\", \"png\", \"gif\", \"bmp\", \"iff\", and \"pict\"")]
       string name,
 
+      [FriendlyName("Is Multiple", "")]
+      bool isMultiple,
+
+      [FriendlyName("Multiple index", "")]
+      int multipleIndex,
+
       [FriendlyName("Loaded Asset", "The Sprite loaded from the specified file path.")]
       out Sprite textureFile
    )
    {
-      textureFile = Resources.Load(name) as Sprite;
+   	  if (isMultiple)
+		textureFile = Resources.LoadAll<Sprite>(name)[multipleIndex] as Sprite;
+   	  else
+        textureFile = Resources.Load<Sprite>(name);
 
       if ( null == textureFile )
       {

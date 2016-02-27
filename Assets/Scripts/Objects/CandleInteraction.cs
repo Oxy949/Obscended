@@ -18,15 +18,15 @@ public class CandleInteraction : InteractableObject
 
     private void CandleInteraction_InteractionFinished(object sender, EventArgs e)
     {
-        light.SetActive(!light.activeSelf);
+        light.GetComponent<MeshRenderer>().enabled = !light.GetComponent<MeshRenderer>().enabled;
         light2.SetActive(!light2.activeSelf);
     }
 
     private void CandleInteraction_InteractionStarted(object sender, EventArgs e)
     {
-        DialogueSystem system = GameObject.FindGameObjectWithTag("Scene").GetComponent<DialogueSystem>();
+        /*DialogueSystem system = GameObject.FindGameObjectWithTag("Scene").GetComponent<DialogueSystem>();
         system.AddMessage("Хмм... переключатель.", "ТУТ ИМЯ ПЕРСОНАЖА", Resources.LoadAll<Sprite>("Dialogues/hero")[0]);
         system.AddMessage("Тут типа начался интерактивный диалог", "ТУТ ЕЩЕ ИМЯ", Resources.LoadAll<Sprite>("Dialogues/hero")[1]);
-        system.AddMessage("Как-то так", "ТУТ ИМЯ ПЕРСОНАЖА", Resources.LoadAll<Sprite>("Dialogues/hero")[2]);
+        system.AddMessage("Как-то так", "ТУТ ИМЯ ПЕРСОНАЖА", Resources.LoadAll<Sprite>("Dialogues/hero")[2]);*/
     }
 }
