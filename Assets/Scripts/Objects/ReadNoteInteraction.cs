@@ -20,10 +20,10 @@ public class ReadNoteInteraction : InteractableObject {
 
     private void ReadNoteInteraction_InteractionStarted(object sender, EventArgs e)
     {
-        NotesSystem system = GameObject.Find("Scene").GetComponent<NotesSystem>();
+		NotesSystem system = GameObject.FindWithTag("Scene").GetComponent<NotesSystem>();
         if (useTrigger)
         {
-            SceneTriggers triggers = GameObject.Find("Scene").GetComponent<SceneTriggers>();
+			SceneTriggers triggers = GameObject.FindWithTag("Scene").GetComponent<SceneTriggers>();
 
             if (triggers.isConditionCompleated(conditionName) && conditionName != "")
                 system.AddMessage(textAfterTrigger, "Закрыть");
