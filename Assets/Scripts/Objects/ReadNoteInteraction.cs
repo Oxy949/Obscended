@@ -8,10 +8,6 @@ public class ReadNoteInteraction : InteractableObject {
 	public string text = ""; 
 	public bool destroyAfterRead = true;
 
-    public bool useTrigger = true;
-    public string conditionName = "";
-	public string textAfterTrigger = "";
-
 	public override void Start()
 	{
 		base.Start();
@@ -21,17 +17,7 @@ public class ReadNoteInteraction : InteractableObject {
     private void ReadNoteInteraction_InteractionStarted(object sender, EventArgs e)
     {
 		NotesSystem system = GameObject.FindWithTag("Scene").GetComponent<NotesSystem>();
-        if (useTrigger)
-        {
-			SceneTriggers triggers = GameObject.FindWithTag("Scene").GetComponent<SceneTriggers>();
-
-            if (triggers.isConditionCompleated(conditionName) && conditionName != "")
-                system.AddMessage(textAfterTrigger, "Закрыть");
-            else
-                system.AddMessage(text, "Закрыть");
-        }
-        else
-            system.AddMessage(text, "Закрыть");
+        system.AddMessage(text, "Закрыть");
 
         if (destroyAfterRead)
         {

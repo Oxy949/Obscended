@@ -10,7 +10,7 @@ public class Simple2DWalker : MonoBehaviour
 
     private Vector2 currentSpeed;
 
-    private Rigidbody2D rigidbody2D;
+    //private Rigidbody2D rdbody2D;
     private NotesSystem msystem;
     private Vector3 lastPosition;
     private SimpleAnimator animator;
@@ -36,7 +36,7 @@ public class Simple2DWalker : MonoBehaviour
     private void Awake()
     {
         animator = GetComponentInChildren<SimpleAnimator>();
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        //rdbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

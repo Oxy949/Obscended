@@ -8,6 +8,7 @@ using System.Linq;
 
 #endregion
 
+#pragma warning disable 0067
 
 [ExecuteInEditMode]
 
@@ -460,6 +461,7 @@ public class DynamicLight : MonoBehaviour {
 	/// Suscribe to this event for receive array of game
 	/// </summary>
 	[Obsolete("OnReachedGameObjects is deprecated, please use InsideFieldOfViewEvent instead.")]
+
 	public event OnReachedDelegate OnReachedGameObjects;
 	public event InsideFieldOfViewDelegate InsideFieldOfViewEvent;
 
@@ -1394,10 +1396,6 @@ public class DynamicLight : MonoBehaviour {
 
 			// Here's where event's are performed //
 			if(notifyGameObjectsReached == true){
-				//notify if not null
-				if(OnReachedGameObjects != null){
-					OnReachedGameObjects(objReached.ToArray());
-				}
 				if(InsideFieldOfViewEvent != null){
 					InsideFieldOfViewEvent(objReached.ToArray());
 				}

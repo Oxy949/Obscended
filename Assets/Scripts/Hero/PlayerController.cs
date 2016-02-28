@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
     public bool interactionObjFounded = false;
     private Vector2 currentSpeed;
     
-    private Rigidbody2D rigidbody2D;
+    private Rigidbody2D rbody2D;
     private NotesSystem nsystem;
     private DialogueSystem dsystem;
     private Vector3 lastPosition;
@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour {
     private void Awake()
     {
         animator = GetComponentInChildren<SimpleAnimator>();
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rbody2D = GetComponent<Rigidbody2D>();
         nsystem = GameObject.FindGameObjectWithTag("Scene").GetComponent<NotesSystem>();
         dsystem = GameObject.FindGameObjectWithTag("Scene").GetComponent<DialogueSystem>();
     }
@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour {
 	void Update() {
         float moveX = CrossPlatformInputManager.GetAxis("Horizontal");
         float moveY = CrossPlatformInputManager.GetAxis("Vertical");
-        bool jumpButton = CrossPlatformInputManager.GetButtonUp("Jump");
+        bool jumpButton = CrossPlatformInputManager.GetButtonUp("Interaction");
         if (nsystem.isShowing || dsystem.isShowing)
         {
             moveX = 0;
@@ -172,7 +172,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (!nsystem.isShowing || !dsystem.isShowing)
         {
-            rigidbody2D.MovePosition(rigidbody2D.position + (new Vector2(currentSpeed.x * maxSpeedX, currentSpeed.y * maxSpeedY) * Time.deltaTime));
+            rbody2D.MovePosition(rbody2D.position + (new Vector2(currentSpeed.x * maxSpeedX, currentSpeed.y * maxSpeedY) * Time.deltaTime));
             lastPosition = transform.position;
         }
     }

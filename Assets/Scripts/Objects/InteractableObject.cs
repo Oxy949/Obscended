@@ -17,7 +17,7 @@ public class InteractableObject : MonoBehaviour {
     public float interactionTime = 0.1f;
     public bool useFacingDirection = true;
     GameObject player;
-    bool isInteracting = false;
+    //bool isInteracting = false;
     // Use this for initialization
     public virtual void Start () {
         player = FindClosestPlayer();

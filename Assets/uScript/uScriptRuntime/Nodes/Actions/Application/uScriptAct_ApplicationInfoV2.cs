@@ -3,6 +3,7 @@
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 #if (!UNITY_3_5 && !UNITY_4_6 && !UNITY_4_7 && !UNITY_5_0 && !UNITY_5_1 && !UNITY_5_2)
 [NodePath("Actions/Application")]
@@ -105,14 +106,15 @@ public class uScriptAct_ApplicationInfoV2 : uScriptLogic
       levelCount = UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings;
 
 #if UNITY_5_3
-UnityEngine.SceneManagement.Scene[] scenes = UnityEngine.SceneManagement.SceneManager.GetAllScenes();
-      loadedLevels = new int[scenes.Length];
-      loadedLevelNames = new string[scenes.Length];
 
-      for (int i = 0; i < scenes.Length; i++)
+
+      loadedLevels = new int[SceneManager.sceneCount];
+      loadedLevelNames = new string[SceneManager.sceneCount];
+
+      for (int i = 0; i < SceneManager.sceneCount; i++)
       {
-         loadedLevels[i] = scenes[i].buildIndex;
-         loadedLevelNames[i] = scenes[i].name;
+         loadedLevels[i] = SceneManager.GetSceneAt(i).buildIndex;
+         loadedLevelNames[i] = SceneManager.GetSceneAt(i).name;
       }
 #else
       loadedLevels = new int[UnityEngine.SceneManagement.SceneManager.sceneCount];

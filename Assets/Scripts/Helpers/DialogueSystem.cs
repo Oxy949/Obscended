@@ -63,10 +63,11 @@ public class DialogueSystem : MonoBehaviour
         dialogueMessageInstantiate.transform.FindChild("DialogueSystem").FindChild("MessageText").GetComponent<Text>().text = text;
         dialogueMessageInstantiate.transform.FindChild("DialogueSystem").FindChild("MessageSenderName").GetComponentInChildren<Text>().text = senderName;
         dialogueMessageInstantiate.transform.FindChild("DialogueSystem").FindChild("MessageSenderImage").GetComponentInChildren<Image>().sprite = senderImage;
+        dialogueMessageInstantiate.transform.FindChild("DialogueSystem").FindChild("MessageButton").GetComponentInChildren<Text>().text = "Продолжить";
 
         isShowing = true;
-        dialogueMessageInstantiate.SetActive(isShowing);
         dialogueMessageInstantiate.transform.FindChild("DialogueSystem").FindChild("MessageButton").GetComponent<Button>().Select();
+        dialogueMessageInstantiate.SetActive(isShowing);
 
         /*dialogueMessageInstantiate.transform.FindChild("DialogueSystem").FindChild("MessageText").GetComponent<TextTypingEffect>().RestartAnimation();
         dialogueMessageInstantiate.transform.FindChild("DialogueSystem").FindChild("MessageSenderName").GetComponent<TextTypingEffect>().RestartAnimation();*/
@@ -93,5 +94,7 @@ public class DialogueSystem : MonoBehaviour
                 list.RemoveAt(0);
             }
         }
+        else
+            dialogueMessageInstantiate.transform.FindChild("DialogueSystem").FindChild("MessageButton").GetComponent<Button>().Select();
     }
 }

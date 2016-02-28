@@ -4,13 +4,13 @@ using System;
 
 public class CandleInteraction : InteractableObject
 {
-    private new GameObject light;
-    private new GameObject light2;
+    private GameObject light1;
+    private GameObject light2;
     public override void Start()
     {
         base.Start();
         //Debug.Log("[CandleInteraction] Start()");
-        light = transform.FindChild("2DLight").gameObject;
+        light1 = transform.FindChild("2DLight").gameObject;
         light2 = transform.FindChild("Point light").gameObject;
         InteractionStarted += CandleInteraction_InteractionStarted;
         InteractionFinished += CandleInteraction_InteractionFinished;
@@ -18,7 +18,7 @@ public class CandleInteraction : InteractableObject
 
     private void CandleInteraction_InteractionFinished(object sender, EventArgs e)
     {
-        light.GetComponent<MeshRenderer>().enabled = !light.GetComponent<MeshRenderer>().enabled;
+        light1.GetComponent<MeshRenderer>().enabled = !light1.GetComponent<MeshRenderer>().enabled;
         light2.SetActive(!light2.activeSelf);
     }
 

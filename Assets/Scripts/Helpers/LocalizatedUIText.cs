@@ -21,6 +21,7 @@ public class LocalizatedUIText : MonoBehaviour {
         }
         catch (Exception e)
         {
+            Debug.Log(e.ToString());
         }
 
         lmanager.ChangeLanguage(lang);

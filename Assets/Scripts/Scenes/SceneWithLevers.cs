@@ -41,7 +41,7 @@ public class SceneWithLevers : LimitedTimeScene
 
         lamps = new List<bool>() { };
 
-        foreach (GameObject lamp in lampsList)
+        for (int i=0; i< lampsList.Capacity; i++)
         {
             lamps.Add(true);
         }
@@ -51,12 +51,12 @@ public class SceneWithLevers : LimitedTimeScene
 
         levers = new List<AdvLever>() { };
 
-        foreach (GameObject lever in leversList)
+        for (int i = 0; i < leversList.Capacity; i++)
         {
             List<int> forLamps = new List<int> { };
 
             int id = 0;
-            foreach (GameObject lamp in lampsList)
+            for (int j = 0; j < lampsList.Capacity; j++)
             {
                 //if (id == leversList.IndexOf(lever))
                 forLamps.Add(UnityEngine.Random.Range(0,2));
@@ -188,7 +188,7 @@ public class SceneWithLevers : LimitedTimeScene
     {
         bool allEnabled = true;
         int id = 0;
-        foreach (GameObject lamp in lampsList)
+        for (int i = 0; i < lampsList.Capacity; i++)
         {
             if (!lamps[id])
                 allEnabled = false;

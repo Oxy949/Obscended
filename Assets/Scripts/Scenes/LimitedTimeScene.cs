@@ -7,6 +7,7 @@ public class LimitedTimeScene : MonoBehaviour
     public float timeRemaining = 60f;
     public GameObject remainingTimeText;
     public bool hasElapsed = false;
+    public bool showCursor = false;
 
     public virtual void Start()
     {
@@ -15,6 +16,8 @@ public class LimitedTimeScene : MonoBehaviour
 
     public virtual void Update()
     {
+        Cursor.visible = showCursor;
+
         if (timeRemaining == 0 && !hasElapsed)
         {
             SendMessageUpwards("timeElapsed");

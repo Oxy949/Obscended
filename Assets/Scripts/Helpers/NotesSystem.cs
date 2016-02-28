@@ -63,8 +63,9 @@ public class NotesSystem : MonoBehaviour {
         noteMessageInstantiate.transform.FindChild("MessageText").GetComponent<Text>().text = text;
         noteMessageInstantiate.transform.FindChild("MessageButton").GetComponentInChildren<Text>().text = buttontext;
         isShowing = true;
-        noteMessageInstantiate.SetActive(isShowing);
+
         noteMessageInstantiate.transform.FindChild("MessageButton").GetComponent<Button>().Select();
+        noteMessageInstantiate.SetActive(isShowing);
     }
 
     public void HideMessage()
@@ -88,5 +89,7 @@ public class NotesSystem : MonoBehaviour {
                 list.RemoveAt(0);
             }
         }
-	}
+        else
+            noteMessageInstantiate.transform.FindChild("MessageButton").GetComponent<Button>().Select();
+    }
 }
