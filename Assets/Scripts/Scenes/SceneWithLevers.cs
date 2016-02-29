@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
 using System;
+using System.Linq;
 
 public class AdvLever
 {
@@ -29,6 +30,8 @@ public class SceneWithLevers : LimitedTimeScene
     public Sprite lampSpriteOn;
 
     public int maxPuzzleSteps = 5;
+    public int maxPuzzleHistory = 2;
+    public int maxLampsPerLever = 3;
 
     //Logic
     private List<AdvLever> levers;
@@ -41,44 +44,99 @@ public class SceneWithLevers : LimitedTimeScene
 
         lamps = new List<bool>() { };
 
-        for (int i=0; i< lampsList.Capacity; i++)
+        for (int i=0; i< lampsList.Count; i++)
         {
             lamps.Add(true);
         }
 
-        Debug.Log("[SceneWithLevers] Total lamps found:" + lamps.Capacity);
-
+        Debug.Log("[SceneWithLevers] Total lamps found:" + lamps.Count);
 
         levers = new List<AdvLever>() { };
 
-        for (int i = 0; i < leversList.Capacity; i++)
+        /* Старый алгоритм
+        for (int i = 0; i < leversList.Count; i++)
         {
             List<int> forLamps = new List<int> { };
 
+            int lampsLeft = maxLampsPerLever;
             int id = 0;
-            for (int j = 0; j < lampsList.Capacity; j++)
+            for (int j = 0; j < lampsList.Count; j++)
             {
                 //if (id == leversList.IndexOf(lever))
-                forLamps.Add(UnityEngine.Random.Range(0,2));
+                int useLamp = 0;
+                if (lampsLeft > 0)
+                    useLamp = UnityEngine.Random.Range(0, 2);
+                forLamps.Add(useLamp);
+                if (useLamp == 1)
+                    lampsLeft--;
                 id++;
+            }
+
+            if (lampsLeft == maxLampsPerLever)
+            {
+                int fixLampId = UnityEngine.Random.Range(0, lampsList.Count);
+                forLamps[fixLampId] = 1;
+            }
+                
+
+            levers.Add(new AdvLever(forLamps, false));
+        }*/
+
+        // Новый
+        List<int> usedLamps = new List<int>() { };
+        for (int i = 0; i < leversList.Count; i++)
+        {
+            List<int> forLamps = new List<int> { };
+
+            int lampToAddId = UnityEngine.Random.Range(0, lampsList.Count);
+            while (usedLamps.Any(item => item == lampToAddId))
+            {
+                lampToAddId = UnityEngine.Random.Range(0, lampsList.Count);
+            }
+
+            usedLamps.Add(lampToAddId);
+
+            for (int j = 0; j < lampsList.Count; j++)
+            {
+                int useLamp = 0;
+                if (lampToAddId == j)
+                    useLamp = 1;
+                forLamps.Add(useLamp);
             }
 
             levers.Add(new AdvLever(forLamps, false));
         }
 
-        Debug.Log("[SceneWithLevers] Total levers found:" + levers.Capacity);
+        for (int i = 0; i < leversList.Count; i++)
+        {
 
-        UpdateLevers();
+            int lampsLeft = maxLampsPerLever-1;
+            for (int j = 0; j < lampsList.Count; j++)
+            {
+                //if (id == leversList.IndexOf(lever))
+                if (lampsLeft > 0 && levers[i].lampsId[j] == 0)
+                {
+                    levers[i].lampsId[j] = UnityEngine.Random.Range(0, 2);
+                }
+                    
+                if (levers[i].lampsId[j] == 1)
+                    lampsLeft--;
+            }
+        }
+
+        Debug.Log("[SceneWithLevers] Total levers found:" + levers.Count);
 
         //PrintLeversMap();
 
         MixPuzzle();
+
+        UpdateLevers();
     }
 
     public void PrintLampsMap()
     {
         Debug.Log("Current lamps stats:");
-        for (int i = 0; i < lamps.Capacity; i++)
+        for (int i = 0; i < lamps.Count; i++)
         {
             Debug.Log("-------------- Lamp " + i + "--------------");
             Debug.Log("Enabled: " + lamps[i]);
@@ -93,7 +151,7 @@ public class SceneWithLevers : LimitedTimeScene
         {
             Debug.Log("------------- Lever " + levers.IndexOf(lever) + "-------------");
             Debug.Log("Enabled: " + lever.isActive);
-            for (int i = 0; i < lever.lampsId.Capacity; i++)
+            for (int i = 0; i < lever.lampsId.Count; i++)
                 Debug.Log(lever.lampsId[i]);
             Debug.Log("------------------------------------");
         }
@@ -104,20 +162,67 @@ public class SceneWithLevers : LimitedTimeScene
         Debug.Log("Mix puzzle with " + maxPuzzleSteps + " steps");
 
         string solution = "";
+
+        /* Старый алгоритм
         for (int i = 0; i < maxPuzzleSteps; i++)
         {
-            int currentLeverId = UnityEngine.Random.Range(0, levers.Capacity);
+            int currentLeverId = UnityEngine.Random.Range(0, levers.Count);
             solution += currentLeverId;
             solution += ",";
             TriggerLever(currentLeverId, false);
         }
         while (isAllLampsActive())
         {
-            int currentLeverId = UnityEngine.Random.Range(0, levers.Capacity);
+            int currentLeverId = UnityEngine.Random.Range(0, levers.Count);
             solution += currentLeverId;
             solution += ",";
             TriggerLever(currentLeverId, false);
+        }*/
+
+        //TODO: Все еще так себе!
+        //Новый алоритм
+        if (maxPuzzleHistory > levers.Count-1)
+            maxPuzzleHistory = levers.Count-1;
+        List<int> lastLaverId = new List<int>() { };
+        int currentLeverId = UnityEngine.Random.Range(0, levers.Count);
+
+        for (int i = 0; i < maxPuzzleSteps; i++)
+        {
+            if (lastLaverId.Count > maxPuzzleHistory)
+            {
+                lastLaverId.RemoveAt(0);
+            }
+
+            int maxinteractions = int.MaxValue;
+            while (lastLaverId.Any(item => item == currentLeverId) && maxinteractions>0)
+            {
+                currentLeverId = UnityEngine.Random.Range(0, levers.Count);
+                maxinteractions--;
+            }
+            TriggerLever(currentLeverId, false);
+            lastLaverId.Add(currentLeverId);
+
+            /*
+            string inList = "";
+            foreach (int t in lastLaverId)
+            {
+                inList += t + ";";
+            }
+            Debug.Log(inList);*/
+
+            if (!isAllLampsActive())
+            {
+                solution += currentLeverId;
+                solution += ",";
+            }
+            else
+            {
+                TriggerLever(currentLeverId, false);
+            }
+            
         }
+
+        UpdateLevers();
 
         Debug.Log("Solution: " + solution);
 
@@ -138,7 +243,7 @@ public class SceneWithLevers : LimitedTimeScene
         lever.isActive = !lever.isActive;
         //lamps[id] = !lamps[id];
 
-        for (int i = 0; i < lever.lampsId.Capacity; i++)
+        for (int i = 0; i < lever.lampsId.Count; i++)
         {
             if (lever.lampsId[i] == 1)
             {
@@ -190,7 +295,7 @@ public class SceneWithLevers : LimitedTimeScene
     {
         bool allEnabled = true;
         int id = 0;
-        for (int i = 0; i < lampsList.Capacity; i++)
+        for (int i = 0; i < lampsList.Count; i++)
         {
             if (!lamps[id])
                 allEnabled = false;
