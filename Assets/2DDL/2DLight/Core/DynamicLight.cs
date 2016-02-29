@@ -8,8 +8,6 @@ using System.Linq;
 
 #endregion
 
-#pragma warning disable 0067
-
 [ExecuteInEditMode]
 
 [RequireComponent (typeof (MeshFilter))]
@@ -462,10 +460,12 @@ public class DynamicLight : MonoBehaviour {
 	/// </summary>
 	[Obsolete("OnReachedGameObjects is deprecated, please use InsideFieldOfViewEvent instead.")]
 
-	public event OnReachedDelegate OnReachedGameObjects;
+#pragma warning disable 0067
+    public event OnReachedDelegate OnReachedGameObjects;
 	public event InsideFieldOfViewDelegate InsideFieldOfViewEvent;
+#pragma warning restore 0067
 
-	public event OnEnterFieldOfViewDelegate OnEnterFieldOfView;
+    public event OnEnterFieldOfViewDelegate OnEnterFieldOfView;
 	public event OnExitFieldOfViewDelegate OnExitFieldOfView;
 
 

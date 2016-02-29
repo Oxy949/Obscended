@@ -178,6 +178,8 @@ public class SceneWithLevers : LimitedTimeScene
                 lamp.GetComponent<SpriteRenderer>().sprite = lampSpriteOn;
             else
                 lamp.GetComponent<SpriteRenderer>().sprite = lampSpriteOff;
+
+            lamp.transform.GetChild(0).gameObject.SetActive(lamps[id]);
             id++;
         }
 
